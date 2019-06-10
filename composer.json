@@ -1,0 +1,21 @@
+{
+
+	"name": "emso-exe/syntheticx",
+
+    "authors": [
+        {
+            "name": "Estênio Mariano",
+            "email": "dev.emso.exe@gmail.com"
+        }
+    ],
+	
+	"autoload": {
+		
+		"psr-4":{
+
+			"app\\":"app"
+			
+		}
+	}
+
+}
