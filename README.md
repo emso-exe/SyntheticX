@@ -3,6 +3,3 @@
 # SyntheticX
 
 Projeto de _aprendizado_, sistema gerenciador de usuários.
-
-
-
