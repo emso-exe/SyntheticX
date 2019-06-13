@@ -8,7 +8,7 @@
 		<meta name="description" content="">
 
 	    <link rel="manifest" href="site.webmanifest">
-	    <link rel="apple-touch-icon" href="icon.png">
+	    <link rel="apple-touch-icon" href="images/icon.png">
 	    <!-- Place favicon.ico in the root directory -->
 
 	    <link rel="stylesheet" href="css/normalize.css">

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i&display=swap'); /* light */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap'); /* regular */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,600i&display=swap'); /* semi-bold */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,700i&display=swap'); /* bold */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800,800i&display=swap'); /* extra-bold */
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+*, *:before, *:after{
+	font-family: 'Open Sans', sans-serif;
+}
