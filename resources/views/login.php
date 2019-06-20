@@ -6,7 +6,7 @@
 		<form class="form-signin">
 		  <div class="text-center mb-4">
 		    <img class="mb-4" src="images/syntheticx.png" alt="" width="128" height="92">
-		    <h1 class="h3 mb-3 font-weight-normal">SYNTHETICX</h1>
+		    <h1 class="h3 mb-3 font-weight-normal exo2-semi-bold-italic">SYNTHETICX</h1>
 		  </div>
 		<br>
 		  <div class="form-label-group">
@@ -22,8 +22,8 @@
 		      <input type="checkbox" value="remember-me"> Lembre-se
 		    </label>
 		  </div>
-		  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-		  <p class="mt-5 mb-3 text-muted text-center">&copy; Estênio 2019-2020</p>
+		  <button class="btn btn-lg btn-primary-x btn-block" type="submit">Login</button>
+		  <p class="mt-5 mb-3 text-muted text-center">&copy; Estênio Mariano 2019</p>
 		</form>
 
 	</div>
