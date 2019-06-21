@@ -1,5 +1,11 @@
+/*
+*		Global
+*
+*		@section global fonts
+*/
+
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i&display=swap'); /* light */
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap'); /* regular */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap'); /* regular */
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,600i&display=swap'); /* semi-bold */
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,700i&display=swap'); /* bold */
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:800,800i&display=swap'); /* extra-bold */
@@ -9,7 +15,7 @@
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:300,300i&display=swap'); /* light */
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:400,400i&display=swap'); /* regular */
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:500,500i&display=swap'); /* medium */
-/*@import url('https://fonts.googleapis.com/css?family=Exo+2:600,600i&display=swap'); /* semi-bold */
+@import url('https://fonts.googleapis.com/css?family=Exo+2:600,600i&display=swap'); /* semi-bold */
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:700,700i&display=swap'); /* bold */
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:800,800i&display=swap'); /* extra-bold */
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:900,900i&display=swap'); /* black */
@@ -24,7 +30,7 @@
 	src: url('/fonts/Exo_2/Exo2-SemiBoldItalic.ttf') format('truetype');
 }
 
-*, *:before, *:after{
+* {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -33,36 +39,58 @@ h1.exo2-semi-bold-italic {
 	color: #4c97e8;
 }
 
-.btn-primary-x {
+/*
+*		Global
+*
+*		@section global components
+*/
+
+.btn-primary {
   color: #fff;
   background-color: #4c97e8;
   border-color: #4c97e8;
 }
 
-.btn-primary-x:hover {
-  color: #fff;
-  background-color: #1d7ce2;
-  border-color: #3489e5;
-}
-
-.btn-primary-x:focus, .btn-primary-x.focus {
-  box-shadow: 0 0 0 0.2rem rgba(76, 151, 232, 0.5);
-}
-
-.btn-primary-x.disabled, .btn-primary-x:disabled {
-  color: #fff;
-  background-color: #4c97e8;
-  border-color: #4c97e8;
-}
-
-.btn-primary-x:not(:disabled):not(.disabled):active, .btn-primary-x:not(:disabled):not(.disabled).active,
-.show > .btn-primary-x.dropdown-toggle {
+.btn-primary:hover {
   color: #fff;
   background-color: #3489e5;
-  border-color: #4a96e8;
+  border-color: #1d7ce2;
 }
 
-.btn-primary-x:not(:disabled):not(.disabled):active:focus, .btn-primary-x:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary-x.dropdown-toggle:focus {
+.btn-primary:focus, .btn-primary.focus {
+ box-shadow: 0 0 0 0.2rem rgba(76, 151, 232, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #4c97e8;
+  border-color: #4c97e8;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #1d7ce2;
+  border-color: #1a70cb;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(76, 151, 232, 0.5);
+}
+
+/*
+*		Local
+*
+*		@section local components
+*/
+
+.form-control-login-pwd {
+  display: inline;
+  width: 90%;
+  margin-left: 10px; 
+}
+
+.fa-key, .fa-user {
+	color: #4c97e8;
 }
