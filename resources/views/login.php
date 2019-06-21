@@ -10,11 +10,11 @@
 		  </div>
 		<br>
 		  <div class="form-label-group">
-		    <input type="login" id="inputLogin" class="form-control" placeholder="Login" required autofocus>
+		    <i class="fas fa-user"></i><input type="login" id="inputLogin" class="form-control form-control-login-pwd" required autofocus>
 		  </div>
 		<br>
 		  <div class="form-label-group">
-		    <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+		    <i class="fas fa-key"></i><input type="password" id="inputPassword" class="form-control form-control-login-pwd" required>
 		  </div>
 		<br>
 		  <div class="checkbox mb-3">
@@ -22,7 +22,7 @@
 		      <input type="checkbox" value="remember-me"> Lembre-se
 		    </label>
 		  </div>
-		  <button class="btn btn-lg btn-primary-x btn-block" type="submit">Login</button>
+		  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 		  <p class="mt-5 mb-3 text-muted text-center">&copy; Estênio Mariano 2019</p>
 		</form>
 
