@@ -1,6 +1,36 @@
 /*
 *		Global
 *
+*		@section global variables
+*/
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+/*
+*		Global
+*
 *		@section global fonts
 */
 
@@ -34,9 +64,9 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-h1.exo2-semi-bold-italic {
+.exo2-semi-bold-italic {
 	font-family: 'Exo 2', sans-serif;
-	color: #4c97e8;
+	color: var(--primary);
 }
 
 /*
@@ -45,44 +75,15 @@ h1.exo2-semi-bold-italic {
 *		@section global components
 */
 
-.btn-primary {
-  color: #fff;
-  background-color: #4c97e8;
-  border-color: #4c97e8;
-}
-
-.btn-primary:hover {
-  color: #fff;
-  background-color: #3489e5;
-  border-color: #1d7ce2;
-}
-
-.btn-primary:focus, .btn-primary.focus {
- box-shadow: 0 0 0 0.2rem rgba(76, 151, 232, 0.5);
-}
-
-.btn-primary.disabled, .btn-primary:disabled {
-  color: #fff;
-  background-color: #4c97e8;
-  border-color: #4c97e8;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #1d7ce2;
-  border-color: #1a70cb;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(76, 151, 232, 0.5);
+body {
+  /*min-height: 75rem;*/
+  padding-top: 3.5rem;
 }
 
 /*
-*		Local
+*		Single
 *
-*		@section local components
+*		@section single components
 */
 
 .form-control-login-pwd {
@@ -92,5 +93,13 @@ h1.exo2-semi-bold-italic {
 }
 
 .fa-key, .fa-user {
-	color: #4c97e8;
+	color: var(--primary);
+}
+
+.fa-small-size {
+  font-size: 20px;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
 }
