@@ -5,7 +5,7 @@
         <div class="col-sm-4">
 		<form class="form-signin">
 		  <div class="text-center mb-4">
-		    <img class="mb-4" src="images/syntheticx.png" alt="" width="128" height="92">
+		    <img class="mb-2" src="images/syntheticx.svg" alt="" width="128" height="92">
 		    <h1 class="h3 mb-3 font-weight-normal exo2-semi-bold-italic">SYNTHETICX</h1>
 		  </div>
 		<br>
