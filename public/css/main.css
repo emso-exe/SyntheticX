@@ -69,6 +69,11 @@
 	color: var(--primary);
 }
 
+.opens-regular-italic {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
 /*
 *		Global
 *
@@ -90,6 +95,10 @@ body {
   display: inline;
   width: 90%;
   margin-left: 10px; 
+}
+
+.form-min-w {
+  /*min-width: 150vh !important;*/
 }
 
 .fa-key, .fa-user {

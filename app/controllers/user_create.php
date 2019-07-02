@@ -1,6 +1,7 @@
 <?php
 
 //use app\models\User;
+use app\classes\Layout;
 
 //$user = new User;
 
@@ -9,6 +10,10 @@ dd($user->all());*/
 
 //$users = $user->all();
 
-$layout->add('home');
+$layout->add('layout_content');
+
+$content = new Layout;
+
+$content->add('user_create');
 
 //require "../app/views/index.php";

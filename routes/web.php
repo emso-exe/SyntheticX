@@ -8,8 +8,9 @@ use app\classes\Uri;
 
 $routes = [
 
-    '/'     => 'app/controllers/login',
-    '/home' => 'app/controllers/index',
+    '/'            => 'app/controllers/login',
+    '/dashboard'   => 'app/controllers/dashboard',
+    '/user_create' => 'app/controllers/user_create',
 
 ];
 
