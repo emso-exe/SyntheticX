@@ -5,7 +5,9 @@
 */
 
 :root {
-  --blue: #007bff;
+  /* list default bootstrap */
+
+  /*--blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -25,7 +27,11 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #343a40;*/
+
+  /* use project */
+  --primary-95: #e6f2ff;
+  --primary-85: #b3d7ff;
 }
 
 /*
@@ -85,6 +91,14 @@ body {
   padding-top: 3.5rem;
 }
 
+.bg-primary-95 {
+  background: var(--primary-95);
+}
+
+.border-primary-85{
+  border-color: var(--primary-85) !important;
+}
+
 /*
 *		Single
 *
@@ -95,10 +109,6 @@ body {
   display: inline;
   width: 90%;
   margin-left: 10px; 
-}
-
-.form-min-w {
-  /*min-width: 150vh !important;*/
 }
 
 .fa-key, .fa-user {

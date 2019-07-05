@@ -10,8 +10,8 @@
         </a>
           <div class="collapse" id="collapse-funcionarios" data-parent="#sidebar-wrapper">
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_create">Cadastro</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Edição</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Consulta</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_search_edit">Edição</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_search">Consulta</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Relatórios</a>
           </div>
         <a href="#collapse-setores-cargos" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-setores-cargos"  class="list-group-item list-group-item-action bg-light">
@@ -55,9 +55,9 @@
                 <span class="mr-2">Estênio Mariano</span><i class="fas fa-user-circle fa-small-size"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#"><i class="fas fa-address-card"></i><span class="ml-2">Perfil</span></a>
+                <a class="dropdown-item" href="#"><i class="fas fa-address-card"></i><span class="ml-3">Perfil</span></a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"><i class="fas fa-times-circle"></i><span class="ml-2">Logout</span></a>
+                <a class="dropdown-item" href="#"><i class="fas fa-times-circle"></i><span class="ml-3">Logout</span></a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -65,9 +65,9 @@
                 <i class="fas fa-question-circle fa-small-size"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
-                <a class="dropdown-item" href="#"><i class="fas fa-address-card"></i><span class="ml-2">Ajuda</span></a>
+                <a class="dropdown-item" href="#"><i class="fas fa-question"></i><span class="ml-3">Ajuda</span></a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"><i class="fas fa-times-circle"></i><span class="ml-2">Sobre</span></a>
+                <a class="dropdown-item" href="#"><i class="fas fa-info"></i><span class="ml-3">Sobre</span></a>
               </div>
             </li>
           </ul>

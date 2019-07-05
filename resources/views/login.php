@@ -3,7 +3,7 @@
     <!-- Page Content -->
     <div class="row justify-content-center" id="#page-content-login">
         <div class="col-sm-4">
-		<form class="form-signin border border-primary rounded p-4 ">
+		<form class="form-signin border border-primary-85 rounded p-4 bg-primary-95">
 		  <div class="text-center mb-4">
 		    <img class="mb-2" src="images/syntheticx.svg" alt="" width="128" height="92">
 		    <h1 class="h3 mb-3 font-weight-normal exo2-semi-bold-italic">SYNTHETICX</h1>
