@@ -16,93 +16,114 @@
 				</div>
 			</div>
 
-			<table class="table table-striped mt-4">
-			  <thead>
-			    <tr class="bg-secondary text-light">
-			      <th scope="col">Matrícula</th>
-			      <th scope="col">Nome</th>
-			      <th scope="col">Setor</th>
-			      <th scope="col">Cargo</th>
-			      <th scope="col">Login</th>
-			      <th scope="col" class="text-center col-md-1">Status</th>
-			      <th scope="col" class="border-left text-center col-md-1 col-md-1">Edição</th>
-			      <th scope="col" class="text-center col-md-1">Exclusão</th>
-			    </tr>
-			  </thead>
-			  <tbody class="table-hover">
-			    <tr>
-			      <th scope="row">10091</th>
-			      <td>Mark Christopher Silva</td>
-			      <td>UX/UI</td>
-			      <td>Analista de qualidade</td>
-			      <td>mark10091</td>
-			      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
-			      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-			      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
-			    </tr>
-			    <tr>
-			      <th scope="row">10093</th>
-			      <td>Rafhael James Santos</td>
-			      <td>Desenvolvimento</td>
-			      <td>Programador VB</td>
-			      <td>rafhael10093</td>
-			      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
-			      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-			      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
-			    </tr>
-			    <tr>
-			      <th scope="row">10092</th>
-			      <td>Bryan Miller Souza</td>
-			      <td>Infraestrutura</td>
-			      <td>Auxiliar de infra</td>
-			      <td>bryan10092</td>
-			      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
-			      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-			      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
-			    </tr>
-			    <tr>
-			      <th scope="row">10096</th>
-			      <td>Joseph Peter Oliveira</td>
-			      <td>Desenvolvimento</td>
-			      <td>Programador Cobol</td>
-			      <td>joseph10096</td>
-			      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
-			      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-			      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
-			    </tr>
-			    <tr>
-			      <th scope="row">10091</th>
-			      <td>Mark Christopher Silva</td>
-			      <td>UX/UI</td>
-			      <td>Analista de qualidade</td>
-			      <td>mark10091</td>
-			      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
-			      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-			      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
-			    </tr>
-			    <tr>
-			      <th scope="row">10093</th>
-			      <td>Rafhael James Santos</td>
-			      <td>Desenvolvimento</td>
-			      <td>Programador VB</td>
-			      <td>rafhael10093</td>
-			      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
-			      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-			      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
-			    </tr>
-			    <tr>
-			      <th scope="row">10092</th>
-			      <td>Bryan Miller Souza</td>
-			      <td>Infraestrutura</td>
-			      <td>Auxiliar de infra</td>
-			      <td>bryan10092</td>
-			      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
-			      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-			      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
-			    </tr>
-			  </tbody>
-			</table>
-
+			<div class="table-height border-bottom overflow-auto mt-4">
+				<table class="table table-striped">
+				  <thead>
+				    <tr class="bg-secondary text-light">
+				      <th scope="col">Matrícula</th>
+				      <th scope="col">Nome</th>
+				      <th scope="col">Setor</th>
+				      <th scope="col">Cargo</th>
+				      <th scope="col">Login</th>
+				      <th scope="col" class="text-center col-md-1">Status</th>
+				      <th scope="col" class="border-left text-center col-md-1 col-md-1">Edição</th>
+				      <th scope="col" class="text-center col-md-1">Exclusão</th>
+				    </tr>
+				  </thead>
+				  <tbody class="table-hover">
+				    <tr>
+				      <th scope="row">10091</th>
+				      <td>Mark Christopher Silva</td>
+				      <td>UX/UI</td>
+				      <td>Analista de qualidade</td>
+				      <td>mark10091</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
+				      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
+				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10093</th>
+				      <td>Rafhael James Santos</td>
+				      <td>Desenvolvimento</td>
+				      <td>Programador VB</td>
+				      <td>rafhael10093</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
+				      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
+				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10092</th>
+				      <td>Bryan Miller Souza</td>
+				      <td>Infraestrutura</td>
+				      <td>Auxiliar de infra</td>
+				      <td>bryan10092</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
+				      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
+				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10096</th>
+				      <td>Joseph Peter Oliveira</td>
+				      <td>Desenvolvimento</td>
+				      <td>Programador Cobol</td>
+				      <td>joseph10096</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
+				      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
+				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10091</th>
+				      <td>Mark Christopher Silva</td>
+				      <td>UX/UI</td>
+				      <td>Analista de qualidade</td>
+				      <td>mark10091</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
+				      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
+				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10093</th>
+				      <td>Rafhael James Santos</td>
+				      <td>Desenvolvimento</td>
+				      <td>Programador VB</td>
+				      <td>rafhael10093</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
+				      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
+				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10092</th>
+				      <td>Bryan Miller Souza</td>
+				      <td>Infraestrutura</td>
+				      <td>Auxiliar de infra</td>
+				      <td>bryan10092</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
+				      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
+				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10093</th>
+				      <td>Rafhael James Santos</td>
+				      <td>Desenvolvimento</td>
+				      <td>Programador VB</td>
+				      <td>rafhael10093</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
+				      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
+				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10092</th>
+				      <td>Bryan Miller Souza</td>
+				      <td>Infraestrutura</td>
+				      <td>Auxiliar de infra</td>
+				      <td>bryan10092</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
+				      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
+				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
 		</form>
 	</div>
 

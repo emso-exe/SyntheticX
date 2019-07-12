@@ -2,7 +2,6 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right w-25 " id="sidebar-wrapper">
-      <!--<a class="navbar-brand exo2-semi-bold-italic m-2" href="#">Syntheticx<span class="sr-only">(current)</span></a>-->
       <div class="list-group list-group-flush">
         <a href="dashboard" class="list-group-item list-group-item-action bg-light" data-parent="#sidebar-wrapper"><i class="fas fa-chalkboard-teacher"></i><span class="ml-2">Dashboard</a>
         <a href="#collapse-funcionarios" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-funcionarios" class="list-group-item list-group-item-action bg-light">
@@ -12,7 +11,6 @@
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_create">Cadastro</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_search_edit">Edição</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_search">Consulta</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Relatórios</a>
           </div>
         <a href="#collapse-setores-cargos" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-setores-cargos"  class="list-group-item list-group-item-action bg-light">
           <i class="fas fa-id-card"></i><span class="ml-2">Setores e Cargos</span>
@@ -21,7 +19,6 @@
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Cadastro</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Edição</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Consulta</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Relatórios</a>
           </div>
         <a href="#collapse-login-senha" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-login-senha" class="list-group-item list-group-item-action bg-light">
           <i class="fas fa-user-lock"></i><span class="ml-2">Login e Senha</span>
@@ -30,16 +27,15 @@
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Cadastro</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Edição</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Consulta</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Relatórios</a>
           </div>
       </div>
-      <!--<a class="navbar-brand exo2-semi-bold-italic m-2 fixed-bottom" href="#">Syntheticx<span class="sr-only">(current)</span></a>-->
-
     </div>
     <!-- /#sidebar-wrapper -->
+
 <?php require $content->load();?>
+
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+  <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom fixed-top">
         <a class="navbar-brand exo2-semi-bold-italic" href="#"><img class="mr-2 ml-2" src="images/syntheticx_white.svg" alt="" width="36" height="27">SyntheticX</a>
@@ -78,28 +74,6 @@
   </div>
   <!-- /#wrapper -->
 
-
-
-
-
-    <!--<footer class="footer mt-auto py-3 fixed-bottom">
-        <span class="text-muted">Coloque o conteúdo do sticky footer aqui.</span>
-    </footer>-->
-
-     <!-- <footer class="sticky-footer fixed-bottom">
-        <div class=" my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
-          </div>
-        </div>
-      </footer>-->
-
-
-
-    <!--<footer class="footer mt-auto py-3 fixed-bottom">
-        <span class="text-muted">Coloque o conteúdo do sticky footer aqui.</span>
-    </footer>-->
-
-
-
-
+  <div id="page-content-footer" class="bg-secondary border-top fixed-bottom">
+    <h6 class="text-dark text-center pt-2">SyntheticX &copy; Estênio Mariano 2019</h6>
+  </div>
