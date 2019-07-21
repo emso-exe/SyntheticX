@@ -17,6 +17,11 @@
 				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_nome" type="text" name="nm_nome" placeholder="nm_nome" onkeypress="" required>
 			</div>
 
+        	<div class="form-group">
+				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Login</label>
+				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_nome" type="text" name="nm_login" placeholder="nm_login" onkeypress="" required>
+			</div>
+
 			<div class="form-row">
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>

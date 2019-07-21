@@ -16,9 +16,9 @@
           <i class="fas fa-id-card"></i><span class="ml-2">Setores e Cargos</span>
         </a>
           <div class="collapse" id="collapse-setores-cargos" data-parent="#sidebar-wrapper">
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Cadastro</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Edição</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Consulta</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="sector_position_create">Cadastro</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="sector_position_search_edit">Edição</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="sector_position_search">Consulta</a>
           </div>
         <a href="#collapse-login-senha" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-login-senha" class="list-group-item list-group-item-action bg-light">
           <i class="fas fa-user-lock"></i><span class="ml-2">Login e Senha</span>

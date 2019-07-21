@@ -210,6 +210,29 @@
 				      <td>Programador Cobol</td>
 				      <td>joseph10096</td>
 				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
+				    </tr>				    <tr>
+				      <th scope="row">10093</th>
+				      <td>Rafhael James Santos</td>
+				      <td>Desenvolvimento</td>
+				      <td>Programador VB</td>
+				      <td>rafhael10093</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10092</th>
+				      <td>Bryan Miller Souza</td>
+				      <td>Infraestrutura</td>
+				      <td>Auxiliar de infra</td>
+				      <td>bryan10092</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10096</th>
+				      <td>Joseph Peter Oliveira</td>
+				      <td>Desenvolvimento</td>
+				      <td>Programador Cobol</td>
+				      <td>joseph10096</td>
+				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
 				    </tr>
 				  </tbody>
 				</table>
