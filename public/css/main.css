@@ -234,5 +234,6 @@ body {
 }
 
 .table-height {
-  height: 55vh !important;
+  height: 57vh !important;
+  max-height: calc(100vh) !important;
 }

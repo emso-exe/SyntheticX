@@ -5,7 +5,7 @@
 	</div>
 	<div class="d-block">
 
-		<form class="m-4" id="form-user-delete" name="form-user-delete" action="" method="POST" onSubmit="">
+		<form class="mx-4 my-2" id="form-user-delete" name="form-user-delete" action="" method="POST" onSubmit="">
 
 			<div class="form-row">
 				<div class="form-group col-md-6">
@@ -23,6 +23,11 @@
 				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_nome" type="text" name="nm_nome" placeholder="nm_nome" onkeypress="" readonly>
 			</div>
 
+        	<div class="form-group">
+				<label for="nm_login" class="col-md-2 col-form-label col-form-label-lg">Login</label>
+				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_login" type="text" name="nm_login" placeholder="nm_login" onkeypress="" readonly>
+			</div>
+
 			<div class="form-row">
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
@@ -34,14 +39,14 @@
 				</div>
 			</div>
 
-			<div class="col-md-11 ml-3 mr-3 mt-4 alert alert-danger" role="alert">
-				<p class="mt-2 mb-2">
-					<strong> ATENÇÃO!</strong> Ao clicar no botão <strong>EXCLUIR</strong> não será possível restaurar o colaborador&nbsp;<strong>Bryan Joseph Silva</strong>.
+			<div class="col-md-11 ml-3 mr-3 mt-2 alert alert-danger" role="alert">
+				<p class="mt-1 mb-1 text-center">
+					<small><strong>ATENÇÃO!</strong> Ao clicar no botão <strong>EXCLUIR</strong> não será possível restaurar o colaborador&nbsp;<strong>Bryan Joseph Silva</strong>.</small>
 				</p>
   				<hr>
   				<div class="form-row col-md-12 justify-content-center">
-					<button class="btn btn-lg btn-danger m-4 col-md-4" type="submit" name="excluir" value="1"><i class="fas fa-trash-alt"></i><span class="ml-4">EXCLUIR</span></button>
-					<button class="btn btn-lg btn-warning m-4 col-md-4" type="reset" name="cancelar" value="0"><i class="fas fa-window-close"></i><span class="ml-4">CANCELAR</span></button>
+					<button class="btn btn-lg btn-danger mr-2 col-md-4" type="submit" name="excluir" value="1"><i class="fas fa-trash-alt"></i><span class="ml-4">EXCLUIR</span></button>
+					<button class="btn btn-lg btn-warning ml-2 col-md-4" type="reset" name="cancelar" value="0"><i class="fas fa-window-close"></i><span class="ml-4">CANCELAR</span></button>
 				</div>
 			</div>
 

@@ -27,6 +27,14 @@
 				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_nome" type="text" name="nm_nome" placeholder="nm_nome" onkeypress="" required>
 			</div>
 
+        	<div class="form-group">
+        		<div class="form-row justify-content-between mr-5">
+					<label for="nm_login" class="col-md-2 col-form-label col-form-label-lg ml-3">Login</label>
+					<small class="text-danger mt-4 mr-4 pr-2">Altere o login na seção <strong>[Login e Senha] [Edição].</strong></small>
+				</div>
+				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_login" type="text" name="nm_login" placeholder="nm_login" onkeypress="" required>
+			</div>
+
 			<div class="form-row">
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>

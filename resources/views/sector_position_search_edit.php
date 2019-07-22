@@ -17,7 +17,7 @@
 			</div>
 
 			<div class="d-inline-flex w-100">
-				<div class="table-height border-bottom overflow-auto mt-3 flex-fill">
+				<div class="table-height border overflow-auto mt-3 flex-fill">
 					<table class="table table-striped">
 					  <thead>
 					    <tr class="bg-secondary text-light">
@@ -26,27 +26,27 @@
 					      <th scope="col" class="text-center col-md-1">Exclusão</th>
 					    </tr>
 					  </thead>
-					  <tbody class="table-hover">
+					  <tbody>
 					    <tr>
 					      <td>UX/UI</td>
-					      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-					      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
+				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
 					    </tr>
 					    <tr>
 					      <td>Desenvolvimento</td>
-					      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-					      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
+				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
 					    </tr>
 					    <tr>
 					      <td>Infraestrutura</td>
-					      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-					      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
+				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
 					    </tr>
 					  </tbody>
 					</table>
 				</div>
-				&nbsp;
-				<div class="table-height border-bottom overflow-auto mt-3 flex-fill">
+				&nbsp;&nbsp;
+				<div class="table-height border overflow-auto mt-3 flex-fill">
 					<table class="table table-striped">
 					  <thead>
 					    <tr class="bg-secondary text-light">
@@ -56,24 +56,24 @@
 					      <th scope="col" class="text-center col-md-1">Exclusão</th>
 					    </tr>
 					  </thead>
-					  <tbody class="table-hover">
+					  <tbody>
 					    <tr>
 					      <td>UX/UI</td>
 					      <td>UX/UI</td>
-					      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-					      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
+				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
 					    </tr>
 					    <tr>
 					      <td>Desenvolvimento</td>
 					      <td>Desenvolvimento</td>
-					      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-					      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
+				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
 					    </tr>
 					    <tr>
 					      <td>UX/UI</td>
 					      <td>Infraestrutura</td>
-					      <td class="border-left text-center"><i class="fas fa-user-edit fa-small-size text-primary"></i></td>
-					      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
+				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
 					    </tr>
 					  </tbody>
 					</table>

@@ -24,7 +24,6 @@
           <i class="fas fa-user-lock"></i><span class="ml-2">Login e Senha</span>
         </a>
           <div class="collapse" id="collapse-login-senha"  data-parent="#sidebar-wrapper">
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Cadastro</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Edição</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Consulta</a>
           </div>
@@ -61,9 +60,9 @@
                 <i class="fas fa-question-circle fa-small-size"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
-                <a class="dropdown-item" href="#"><i class="fas fa-question"></i><span class="ml-3">Ajuda</span></a>
+                <a class="dropdown-item" href="#"><i class="fas fa-question-circle"></i><span class="ml-3">Ajuda</span></a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"><i class="fas fa-info"></i><span class="ml-3">Sobre</span></a>
+                <a class="dropdown-item" href="#"><i class="fas fa-info-circle"></i><span class="ml-3">Sobre</span></a>
               </div>
             </li>
           </ul>

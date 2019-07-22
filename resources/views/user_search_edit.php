@@ -16,7 +16,7 @@
 				</div>
 			</div>
 
-			<div class="table-height border-bottom overflow-auto mt-4">
+			<div class="table-height border overflow-auto mt-4">
 				<table class="table table-striped">
 				  <thead>
 				    <tr class="bg-secondary text-light">
@@ -30,7 +30,7 @@
 				      <th scope="col" class="text-center col-md-1">Exclusão</th>
 				    </tr>
 				  </thead>
-				  <tbody class="table-hover">
+				  <tbody>
 				    <tr>
 				      <th scope="row">10091</th>
 				      <td>Mark Christopher Silva</td>

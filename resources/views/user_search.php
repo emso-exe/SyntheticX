@@ -17,7 +17,7 @@
 				</div>
 			</div>
 
-			<div class="table-height border-bottom overflow-auto mt-4">
+			<div class="table-height border overflow-auto mt-4">
 				<table class="table table-sm table-striped">
 				  <thead>
 				    <tr class="bg-secondary text-light">
@@ -122,7 +122,7 @@
 					  </th>
 				    </tr>
 				  </thead>
-				  <tbody class="table-hover">
+				  <tbody>
 				    <tr>
 				      <th scope="row">10091</th>
 				      <td>Mark Christopher Silva</td>
@@ -226,7 +226,7 @@
 				      <td>bryan10092</td>
 				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
 				    </tr>
-				    <tr>
+				    <tr class="border-bottom">
 				      <th scope="row">10096</th>
 				      <td>Joseph Peter Oliveira</td>
 				      <td>Desenvolvimento</td>
