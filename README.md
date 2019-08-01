@@ -2,6 +2,12 @@
 
 # SyntheticX
 
-Projeto de _aprendizado_, sistema gerenciador de usuários (_funcionários_) com cadastro e permissão de acesso de acordo com perfil, manutenção de cargos e setores via administrador e elaboração de relatórios.
+Projeto de sistema gerenciador de usuários (_funcionários_) com cadastro, atribuição de cargo e setor e geração de matrícula e senha. O perfil cadastrado e o status do usuário define a permissão de acesso, total, parcial ou negado. Possui também a parte dedicada a manutenção acesso, usuários, cargos e setores via administrador e criação de relatórios (_listas_).
 
+## Créditos
 
+- [Estênio Mariano][link-author]
+
+## Licença
+
+Licença MIT (MIT). Por favor leia o [arquivo da linceça](LICENSE.md) para mais informações.
