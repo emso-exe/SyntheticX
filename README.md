@@ -6,7 +6,7 @@ Projeto de sistema gerenciador de usuários (_funcionários_) com cadastro, atri
 
 ## Créditos
 
-- [Estênio Mariano][link-author]
+- [Estênio Mariano](https://github.com/emso-exe)
 
 ## Licença
 
