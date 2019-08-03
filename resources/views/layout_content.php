@@ -12,6 +12,13 @@
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_search_edit">Edição</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_search">Consulta</a>
           </div>
+        <a href="#collapse-login-senha" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-login-senha" class="list-group-item list-group-item-action bg-light">
+          <i class="fas fa-user-lock"></i><span class="ml-2">Login e Senha</span>
+        </a>
+          <div class="collapse" id="collapse-login-senha"  data-parent="#sidebar-wrapper">
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Manutenção</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Consulta</a>
+          </div>
         <a href="#collapse-setores-cargos" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-setores-cargos"  class="list-group-item list-group-item-action bg-light">
           <i class="fas fa-id-card"></i><span class="ml-2">Setores e Cargos</span>
         </a>
@@ -20,25 +27,18 @@
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="sector_position_search_edit">Edição</a>
             <a class="list-group-item list-group-item-action list-group-item-light border-0" href="sector_position_search">Consulta</a>
           </div>
-        <a href="#collapse-login-senha" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-login-senha" class="list-group-item list-group-item-action bg-light">
-          <i class="fas fa-user-lock"></i><span class="ml-2">Login e Senha</span>
-        </a>
-          <div class="collapse" id="collapse-login-senha"  data-parent="#sidebar-wrapper">
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Edição</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Consulta</a>
-          </div>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
 
 <?php require $content->load();?>
 
-    <!-- Page Content -->
+  <!-- Page Content -->
   <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom fixed-top">
-        <a class="navbar-brand exo2-semi-bold-italic" href="#"><img class="mr-2 ml-2" src="images/syntheticx_white.svg" alt="" width="36" height="27">SyntheticX</a>
-        <!--<button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>-->
+        <a class="navbar-brand exo2-semi-bold-italic" href="#"><img class="mr-2 ml-2" src="images/syntheticx_white.svg" alt="" width="40" height="31">SyntheticX</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars fa-small-size"></i>
         </button>
