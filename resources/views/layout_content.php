@@ -16,8 +16,8 @@
           <i class="fas fa-user-lock"></i><span class="ml-2">Login e Senha</span>
         </a>
           <div class="collapse" id="collapse-login-senha"  data-parent="#sidebar-wrapper">
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Manutenção</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="#">Consulta</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="login_pass_search_edit">Manutenção</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="login_pass_search">Consulta</a>
           </div>
         <a href="#collapse-setores-cargos" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-setores-cargos"  class="list-group-item list-group-item-action bg-light">
           <i class="fas fa-id-card"></i><span class="ml-2">Setores e Cargos</span>
