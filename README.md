@@ -10,8 +10,4 @@ Projeto de sistema gerenciador de usuários (_funcionários_) com cadastro, atri
 
 ## Licença
 
-<<<<<<< HEAD
 Licença MIT (MIT). Por favor leia o [arquivo da licença](LICENSE.md) para mais informações.
-=======
-Licença MIT (MIT). Por favor leia o [arquivo da licença](LICENSE.md) para mais informações.
->>>>>>> cfb767838b2d844786c4cc9ea4e17ac6520d0fed
