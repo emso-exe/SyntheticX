@@ -1,7 +1,7 @@
 <div class="d-flex flex-column w-100 h-75">
 
 	<div class="container-fluid h-25 bg-secondary text-center">
-		<h1 class="m-3 text-light"><span class="mr-4 opens-regular-italic">Edição de setor e cargo</span><i class="fas fa-id-card"></i></h1>
+		<h1 class="m-3 text-light"><span class="mr-4 opens-regular-italic">Edição de setor e cargo</span><i class="fas fa-edit"></i></h1>
 	</div>
 
 	<div class="d-block">
@@ -22,7 +22,7 @@
 					  <thead>
 					    <tr class="bg-secondary text-light">
 					      <th scope="col">Setor</th>
-					      <th scope="col" class="border-left text-center col-md-1 col-md-1">Edição</th>
+					      <th scope="col" class="border-left text-center col-md-1">Edição</th>
 					      <th scope="col" class="text-center col-md-1">Exclusão</th>
 					    </tr>
 					  </thead>

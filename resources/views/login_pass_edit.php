@@ -1,7 +1,7 @@
 <div class="d-flex flex-column w-100 h-75">
 
 	<div class="container-fluid h-25 bg-secondary text-center">
-		<h1 class="m-3 text-light"><span class="mr-4 opens-regular-italic">Edição de funcionário</span><i class="fas fa-user-edit"></i></h1>
+		<h1 class="m-3 text-light"><span class="mr-4 opens-regular-italic">Manutenção de login e senha</span><i class="fas fa-user-edit"></i></h1>
 	</div>
 	<div class="d-block">
 

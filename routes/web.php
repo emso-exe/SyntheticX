@@ -7,7 +7,7 @@ use app\classes\Routes;
 use app\classes\Uri;
 
 $routes = [
-    
+
     '/'                            => 'app/controllers/login',
     '/dashboard'                   => 'app/controllers/dashboard',
     '/user_create'                 => 'app/controllers/user_create',
@@ -21,6 +21,8 @@ $routes = [
     '/sector_position_create'      => 'app/controllers/sector_position_create',
     '/sector_position_search'      => 'app/controllers/sector_position_search',
     '/sector_position_search_edit' => 'app/controllers/sector_position_search_edit',
+    '/sector_position_edit'        => 'app/controllers/sector_position_edit',
+    '/sector_position_delete'      => 'app/controllers/sector_position_delete',
 ];
 
 $uri = Uri::load();

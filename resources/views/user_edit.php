@@ -5,7 +5,7 @@
 	</div>
 	<div class="d-block">
 
-		<form class="m-4" id="form-user-create" name="form-user-create" action="" method="POST" onSubmit="">
+		<form class="m-4" id="form-user-edit" name="form-user-edit" action="" method="POST" onSubmit="">
 
 			<div class="form-row">
 				<div class="form-group col-md-6">

@@ -26,7 +26,7 @@
 				      <th scope="col">Cargo</th>
 				      <th scope="col">Login</th>
 				      <th scope="col" class="text-center col-md-1">Status</th>
-				      <th scope="col" class="border-left text-center col-md-1 col-md-1">Edição</th>
+				      <th scope="col" class="border-left text-center col-md-1">Edição</th>
 				      <th scope="col" class="text-center col-md-1">Exclusão</th>
 				    </tr>
 				  </thead>
