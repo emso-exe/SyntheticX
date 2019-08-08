@@ -221,6 +221,10 @@ body {
   margin-left: 10px; 
 }
 
+.font-size-table {
+  font-size: 0.8rem;
+}
+
 .fa-key, .fa-user {
 	color: var(--primary);
 }

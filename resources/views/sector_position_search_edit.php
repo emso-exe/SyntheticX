@@ -51,7 +51,8 @@
 					  <thead>
 					    <tr class="bg-secondary text-light">
 					      <th scope="col">Setor</th>
-					      <th scope="col">Cargo</th>
+						  <th scope="col">Cargo</th>
+					      <th scope="col" class="border-left text-center col-md-1 col-md-1">Perfil</th>						  
 					      <th scope="col" class="border-left text-center col-md-1 col-md-1">Edição</th>
 					      <th scope="col" class="text-center col-md-1">Exclusão</th>
 					    </tr>
@@ -59,19 +60,29 @@
 					  <tbody>
 					    <tr>
 					      <td>UX/UI</td>
-					      <td>UX/UI</td>
+						  <td>UX/UI</td>
+						  <td class="border-left text-center">Usuário</td>
+					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
+				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
+						</tr>
+					    <tr>
+					      <td>Desenvolvimento</td>
+						  <td>Desenvolvedor PHP</td>
+						  <td class="border-left text-center">Administrador</td>
+					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
+				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
+					    </tr>						
+					    <tr>
+					      <td>Desenvolvimento</td>
+						  <td>Programador</td>
+						  <td class="border-left text-center">Super Usuário</td>
 					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
 				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
 					    </tr>
 					    <tr>
-					      <td>Desenvolvimento</td>
-					      <td>Desenvolvimento</td>
-					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
-				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
-					    </tr>
-					    <tr>
 					      <td>UX/UI</td>
-					      <td>Infraestrutura</td>
+						  <td>Infraestrutura</td>
+						  <td class="border-left text-center">Usuário</td>
 					  	  <td class="border-left text-center"><i class="fas fa-pen-square fa-small-size text-primary"></i></td>
 				      	  <td class="text-center"><i class="fas fa-minus-square fa-small-size text-danger"></i></td>
 					    </tr>

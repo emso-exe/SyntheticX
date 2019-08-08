@@ -8,7 +8,7 @@
 		<form class="m-4" id="form-user-search" name="form-user-search" action="" method="POST" onSubmit="">
 
         	<div class="form-group">
-				<label for="ds_search" class="col-md-12 col-form-label col-form-label-lg">Matrícula, nome, setor, cargo ou status</label>
+				<label for="ds_search" class="col-md-12 col-form-label col-form-label-lg">Matrícula, nome, login, setor, cargo ou status</label>
 				<div class="form-row col-md-12">
 					<input class="form-control form-control-lg col-md-5" id="ds_search" type="search" name="ds_search" placeholder="ds_search" onkeypress="" aria-label="ds_search" required>
 					<button class="btn btn-lg btn-success col-md-3 ml-3" type="submit" name="gravar" value="1"><i class="fas fa-search"></i><span class="ml-4">LOCALIZAR</span></button>
