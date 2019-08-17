@@ -28,6 +28,16 @@
 						<option value="">Suporte</option>
 					</select>
 				</div>
+				<div class="form-group col-md-6">
+					<label for="cd_setor" class="col-md-6 col-form-label col-form-label-lg">Nível de acesso</label>
+      				<select class="col-md-10 ml-3 form-control form-control-lg" id="setor" type="text" name="cd_perfil" placeholder="cd_perfil" onchange="" required>
+						<option value="">Selecione um perfil</option>
+						<option value="">Administrador</option>
+						<option value="">Super usuário</option>
+						<option value="">Usuário</option>
+						<option value="">Restrito</option>
+					</select>
+				</div>	
 			</div>
 
         	<div class="form-group">
