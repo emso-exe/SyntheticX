@@ -29,6 +29,9 @@
 				<div class="text-center">
 					<a class="small" href="forgot">Esqueceu a senha?</a>
 				</div>
+				<div class="text-center">
+					<a class="small" href="reset">Primeiro acesso?</a>
+				</div>
 				<p class="mt-5 mb-3 text-muted text-center">&copy; Estênio Mariano 2019</p>
 			</form>
 		</div>

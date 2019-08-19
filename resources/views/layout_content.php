@@ -50,7 +50,7 @@
                 <span class="mr-2">Estênio Mariano</span><i class="fas fa-user-circle fa-small-size"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#"><i class="fas fa-address-card"></i><span class="ml-3">Perfil</span></a>
+                <a class="dropdown-item" href="profile"><i class="fas fa-address-card"></i><span class="ml-3">Perfil</span></a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#"><i class="fas fa-times-circle"></i><span class="ml-3">Logout</span></a>
               </div>
