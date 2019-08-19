@@ -23,7 +23,7 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text border-right-0 bg-white" id="inputPassword"><i class="fas fa-key"></i></div>
                     </div>
-                    <input type="text" class="form-control border-left-0" placeholder="" aria-label="" aria-describedby="inputPassword" required>
+                    <input type="password" class="form-control border-left-0" placeholder="" aria-label="" aria-describedby="inputPassword" required>
                 </div>
 
                 <label class="text-primary mt-3">Digite novamente a senha</label>
@@ -31,7 +31,7 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text border-right-0 bg-white" id="inputNewPassword"><i class="fas fa-key"></i></div>
                     </div>
-                    <input type="text" class="form-control border-left-0" placeholder="" aria-label="" aria-describedby="inputPassword" required>
+                    <input type="password" class="form-control border-left-0" placeholder="" aria-label="" aria-describedby="inputPassword" required>
                 </div>
             <br>        
                 <button class="btn btn-lg btn-primary btn-block font-weight-bold" type="submit">Salvar</button>

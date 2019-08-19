@@ -71,7 +71,6 @@
     </div>
     <!-- /#page-content-wrapper -->
   </div>
-  <!-- /#wrapper -->
 
   <div id="page-content-footer" class="bg-secondary border-top fixed-bottom">
     <h6 class="text-dark text-center pt-2">SyntheticX &copy; Estênio Mariano 2019</h6>

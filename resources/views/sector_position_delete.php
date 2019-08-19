@@ -9,7 +9,7 @@
 
         	<div class="form-group">
 				<label for="nm_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
-				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_setor" type="text" name="nm_setor" placeholder="nm_setor" onkeypress="" required>
+				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_setor" type="text" name="nm_setor" placeholder="nm_setor" onkeypress="" readonly>
 			</div>
 
 			<div class="col-md-11 ml-3 mr-3 mt-2 alert alert-danger" role="alert">
@@ -28,7 +28,7 @@
 			<div class="form-row">
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
-      				<select class="col-md-10 ml-3 form-control form-control-lg" id="setor" type="text" name="cd_setor" placeholder="cd_setor" onchange="" required>
+      				<select class="col-md-10 ml-3 form-control form-control-lg" id="setor" type="text" name="cd_setor" placeholder="cd_setor" onchange="" readonly>
 						<option value="">Selecione um setor</option>
 						<option value="">CPD</option>
 						<option value="">Suporte</option>
@@ -36,7 +36,7 @@
 				</div>
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-6 col-form-label col-form-label-lg">Nível de acesso</label>
-      				<select class="col-md-10 ml-3 form-control form-control-lg" id="setor" type="text" name="cd_perfil" placeholder="cd_perfil" onchange="" required>
+      				<select class="col-md-10 ml-3 form-control form-control-lg" id="setor" type="text" name="cd_perfil" placeholder="cd_perfil" onchange="" readonly>
 						<option value="">Selecione um perfil</option>
 						<option value="">Administrador</option>
 						<option value="">Super usuário</option>
@@ -48,7 +48,7 @@
 
         	<div class="form-group">
 				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Cargo</label>
-				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_nome" type="text" name="nm_nome" placeholder="nm_nome" onkeypress="" required>
+				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_nome" type="text" name="nm_nome" placeholder="nm_nome" onkeypress="" readonly>
 			</div>
 
 			<div class="col-md-11 ml-3 mr-3 mt-2 alert alert-danger" role="alert">
