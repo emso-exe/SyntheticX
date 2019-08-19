@@ -10,8 +10,9 @@ $routes = [
 
     '/'                            => 'app/controllers/login',
     '/reset'                       => 'app/controllers/reset',
-    '/forgot'                       => 'app/controllers/forgot',
+    '/forgot'                      => 'app/controllers/forgot',
     '/dashboard'                   => 'app/controllers/dashboard',
+    '/profile'                     => 'app/controllers/profile',
     '/user_create'                 => 'app/controllers/user_create',
     '/user_search'                 => 'app/controllers/user_search',
     '/user_search_edit'            => 'app/controllers/user_search_edit',
