@@ -1,14 +1,14 @@
 <?php
 
-//use app\models\User;
+use app\models\Table;
 use app\classes\Layout;
 
-//$user = new User;
+$user = new Table;
 
-/*require "../app/functions/helpers.php";
-dd($user->all());*/
+//dd($user->all());
 
-//$users = $user->all();
+$user = $user->all();
+var_dump($user);
 
 $layout->add('layout_content');
 
