@@ -8,10 +8,12 @@ abstract class Crud
 {
 
     protected $connection;
+    protected $path = "../database/migrations/";
+    protected $file = "config_db.ini";
 
     public function __construct()
     {
-        $this->connection = Connection::connect();
+        $this->connection = Connection::getConnection($this->path . $this->file);
     }
 
     public function all()
