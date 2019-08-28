@@ -63,7 +63,7 @@ final class Connection
                 return new PDO("firebird:dbname={$dbname}", $username, $password);
                 break;
             default:
-                throw new Exception('Erro: tipo de banco de dados não informado');
+                throw new Exception('Erro: tipo de banco de dados não informado.');
         }
     }
 
