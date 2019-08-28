@@ -19,7 +19,7 @@ abstract class Crud
     public function all()
     {
 
-        $sql  = "SELECT * FROM {$this->table}";
+        $sql  = $this->sql;
         $list = $this->connection->prepare($sql);
         $list->execute();
 
