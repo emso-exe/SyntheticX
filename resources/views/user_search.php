@@ -168,18 +168,20 @@
 				    </tr>
 				  </thead>
 				  <tbody>
+				  <?php foreach ($users as $user): ?>
 				    <tr>
-				      <th scope="row">10091</th>
-				      <td>Mark Christopher Silva</td>
-				      <td>UX/UI</td>
-				      <td>Analista de qualidade</td>
-					  <td>mark10091</td>
-					  <td>Usuário</td>
-					  <td>20:00 07/08/2019</td>
-					  <td>20:00 07/08/2019</td>
+				      <th scope="row"><?= $user->id_matricula ?></th>
+				      <td><?= $user->nm_usuario ?></td>
+				      <td><?= $user->nm_setor ?></td>
+				      <td><?= $user->nm_cargo ?></td>
+					  <td><?= $user->ds_login ?></td>
+					  <td><?= $user->ds_perfil ?></td>
+					  <td><?= $user->dt_create ?></td>
+					  <td><?= $user->dt_update ?></td>
 				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
-				    </tr>
-				    <tr>
+					</tr>
+					<?php endforeach ?>
+<!--				    <tr>
 				      <th scope="row">10093</th>
 				      <td>Rafhael James Santos</td>
 				      <td>Desenvolvimento</td>
@@ -320,7 +322,7 @@
 					  <td>23:00 07/03/2019</td>	
 					  <td>20:00 07/08/2019</td>				  
 				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
-				    </tr>
+				    </tr>-->
 				  </tbody>
 				</table>
 			</div>
