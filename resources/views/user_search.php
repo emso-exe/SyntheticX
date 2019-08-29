@@ -110,7 +110,7 @@
 								</div>
 							</div>
 						</div>
-					  </th>	
+					  </th>
 				      <th scope="col">
 						<div class="btn-group" role="group">
 							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -125,7 +125,7 @@
 								</div>
 							</div>
 						</div>
-					  </th>	
+					  </th>
 				      <th scope="col">
 						<div class="btn-group" role="group">
 							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -140,7 +140,7 @@
 								</div>
 							</div>
 						</div>
-					  </th>						  					  				  
+					  </th>
 				      <th scope="col" class="text-center">
 						<div class="btn-group" role="group">
 							<button id="btn-group-status" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -170,71 +170,28 @@
 				  <tbody>
 				  <?php foreach ($users as $user): ?>
 				    <tr>
-				      <th scope="row"><?= $user->id_matricula ?></th>
-				      <td><?= $user->nm_usuario ?></td>
-				      <td><?= $user->nm_setor ?></td>
-				      <td><?= $user->nm_cargo ?></td>
-					  <td><?= $user->ds_login ?></td>
-					  <td><?= $user->ds_perfil ?></td>
-					  <td><?= $user->dt_create ?></td>
-					  <td><?= $user->dt_update ?></td>
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
+				      <th scope="row"><?=$user->id_matricula?></th>
+				      <td><?=$user->nm_usuario?></td>
+				      <td><?=$user->nm_setor?></td>
+				      <td><?=$user->nm_cargo?></td>
+					  <td><?=$user->ds_login?></td>
+					  <td><?=$user->ds_perfil?></td>
+					  <td><?=$user->dt_create?></td>
+					  <td><?=$user->dt_update?></td>
+				      <td class="text-center my-status"><?=$user->ds_status?></td>
 					</tr>
-					<?php endforeach ?>
-<!--				    <tr>
+				  <?php endforeach?>
+					<!--<tr>
 				      <th scope="row">10093</th>
 				      <td>Rafhael James Santos</td>
 				      <td>Desenvolvimento</td>
 				      <td>Programador VB</td>
 					  <td>rafhael10093</td>
 					  <td>Usuário</td>
-					  <td>10:00 07/05/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10092</th>
-				      <td>Bryan Miller Souza</td>
-				      <td>Infraestrutura</td>
-				      <td>Auxiliar de infra</td>
-					  <td>bryan10092</td>
-					  <td>Super Usuário</td>
-					  <td>21:00 08/08/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10096</th>
-				      <td>Joseph Peter Oliveira</td>
-				      <td>Desenvolvimento</td>
-				      <td>Programador Cobol</td>
-					  <td>joseph10096</td>
-					  <td>Administrador</td>
-					  <td>19:30 07/08/2019</td>
+					  <td>10:00 07/05/2019</td>
 					  <td>20:00 07/08/2019</td>
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10091</th>
-				      <td>Mark Christopher Silva</td>
-				      <td>UX/UI</td>
-				      <td>Analista de qualidade</td>
-					  <td>mark10091</td>
-					  <td>Usuário</td>
-					  <td>10:25 01/08/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10093</th>
-				      <td>Rafhael James Santos</td>
-				      <td>Desenvolvimento</td>
-				      <td>Programador VB</td>
-					  <td>rafhael10093</td>
-					  <td>Usuário</td>
-					  <td>20:00 01/07/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
+					  <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i>
+					  <i class="fas fa-circle fa-small-size text-warning"></i></td>
 				    </tr>
 				    <tr>
 				      <th scope="row">10092</th>
@@ -243,85 +200,9 @@
 				      <td>Auxiliar de infra</td>
 					  <td>bryan10092</td>
 					  <td>Super Usuário</td>
-					  <td>17:00 02/06/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
+					  <td>21:00 08/08/2019</td>
+					  <td>20:00 07/08/2019</td>
 				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10096</th>
-				      <td>Joseph Peter Oliveira</td>
-				      <td>Desenvolvimento</td>
-				      <td>Programador Cobol</td>
-					  <td>joseph10096</td>
-					  <td>Administrador</td>
-					  <td>18:50 03/01/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10093</th>
-				      <td>Rafhael James Santos</td>
-				      <td>Desenvolvimento</td>
-				      <td>Programador VB</td>
-					  <td>rafhael10093</td>
-					  <td>Usuário</td>
-					  <td>20:00 07/08/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10092</th>
-				      <td>Bryan Miller Souza</td>
-				      <td>Infraestrutura</td>
-				      <td>Auxiliar de infra</td>
-					  <td>bryan10092</td>
-					  <td>Super Usuário</td>
-					  <td>21:50 08/08/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10096</th>
-				      <td>Joseph Peter Oliveira</td>
-				      <td>Desenvolvimento</td>
-				      <td>Programador Cobol</td>
-					  <td>joseph10096</td>
-					  <td>Usuário</td>
-					  <td>20:40 17/08/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
-				    </tr>				    <tr>
-				      <th scope="row">10093</th>
-				      <td>Rafhael James Santos</td>
-				      <td>Desenvolvimento</td>
-				      <td>Programador VB</td>
-					  <td>rafhael10093</td>
-					  <td>Usuário</td>
-					  <td>16:00 26/08/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-warning"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10092</th>
-				      <td>Bryan Miller Souza</td>
-				      <td>Infraestrutura</td>
-				      <td>Auxiliar de infra</td>
-					  <td>bryan10092</td>
-					  <td>Usuário</td>
-					  <td>20:00 15/04/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
-				    </tr>
-				    <tr class="border-bottom">
-				      <th scope="row">10096</th>
-				      <td>Joseph Peter Oliveira</td>
-				      <td>Desenvolvimento</td>
-				      <td>Programador Cobol</td>
-					  <td>joseph10096</td>
-					  <td>Usuário</td>
-					  <td>23:00 07/03/2019</td>	
-					  <td>20:00 07/08/2019</td>				  
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i></td>
 				    </tr>-->
 				  </tbody>
 				</table>
