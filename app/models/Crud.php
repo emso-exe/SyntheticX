@@ -18,12 +18,16 @@ abstract class Crud
 
     public function all()
     {
-
         $sql  = $this->sql;
+        echo $sql."<br>";
         $list = $this->connection->prepare($sql);
         $list->execute();
 
         return $list->fetchAll();
+    }
+
+    public function find(){
+        
     }
 
 }
