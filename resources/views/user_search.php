@@ -18,22 +18,20 @@
 			</div>
 
 			<div class="table-height border overflow-auto mt-4">
-				<table class="table table-sm table-striped font-size-table">
+				<table id="my-table" class="table table-sm table-striped font-size-table">
 				  <thead>
 				    <tr class="bg-secondary text-light">
 				      <th scope="col">
 						<div class="btn-group" role="group">
-							<button id="btn-group-matricula" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Matrícula
+							<button id="btn-group-matricula" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="small fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-matricula">
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-up"></i><span class="ml-3">Ascendente</span></a>
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-down"></i><span class="ml-3">Descendente</span></a>
-								<div class="dropdown-divider"></div>
 								<div class="form-row ml-2 mr-2">
 									<input class="form-control form-control-sm col-md-12" id="ds_search_matricula" type="search" name="ds_search_matricula" placeholder="ds_search_matricula" onkeypress="" aria-label="ds_search_matricula">
 								</div>
 							</div>
+							<span class="btn btn-secondary border-0">Matrícula</span>
 						</div>
 					  </th>
 				      <th scope="col">
@@ -42,10 +40,7 @@
 							Nome
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-nome">
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-up"></i><span class="ml-3">Ascendente</span></a>
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-down"></i><span class="ml-3">Descendente</span></a>
-								<div class="dropdown-divider"></div>
-								<div class="form-row ml-2 mr-2">
+								<div class="form-row ml-2 mr-2">	
 									<input class="form-control form-control-sm col-md-12" id="ds_search_nome" type="search" name="ds_search_nome" placeholder="ds_search_nome" onkeypress="" aria-label="ds_search_nome">
 								</div>
 							</div>
@@ -57,9 +52,6 @@
 							Setor
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-setor">
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-up"></i><span class="ml-3">Ascendente</span></a>
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-down"></i><span class="ml-3">Descendente</span></a>
-								<div class="dropdown-divider"></div>
 								<div class="form-row ml-2 mr-2">
 									<input class="form-control form-control-sm col-md-12" id="ds_search_setor" type="search" name="ds_search_setor" placeholder="ds_search_setor" onkeypress="" aria-label="ds_search_setor">
 								</div>
@@ -181,29 +173,6 @@
 				      <td class="text-center my-status"><?=$user->ds_status?></td>
 					</tr>
 				  <?php endforeach?>
-					<!--<tr>
-				      <th scope="row">10093</th>
-				      <td>Rafhael James Santos</td>
-				      <td>Desenvolvimento</td>
-				      <td>Programador VB</td>
-					  <td>rafhael10093</td>
-					  <td>Usuário</td>
-					  <td>10:00 07/05/2019</td>
-					  <td>20:00 07/08/2019</td>
-					  <td class="text-center"><i class="fas fa-circle fa-small-size text-success"></i>
-					  <i class="fas fa-circle fa-small-size text-warning"></i></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">10092</th>
-				      <td>Bryan Miller Souza</td>
-				      <td>Infraestrutura</td>
-				      <td>Auxiliar de infra</td>
-					  <td>bryan10092</td>
-					  <td>Super Usuário</td>
-					  <td>21:00 08/08/2019</td>
-					  <td>20:00 07/08/2019</td>
-				      <td class="text-center"><i class="fas fa-circle fa-small-size text-danger"></i></td>
-				    </tr>-->
 				  </tbody>
 				</table>
 			</div>
