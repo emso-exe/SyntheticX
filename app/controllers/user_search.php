@@ -18,10 +18,6 @@ INNER JOIN status AS st ON u.id_status = st.id_status";
 $user = new Query;
 
 switch (true) {
-    case (!isset($validate->{'ds_search'})):
-        $user->createQuery($query_user . ";");
-        $users = $user->all();
-        break;
     case (!empty($validate->{'ds_search'})):
         $user->createQuery($query_user . " WHERE u.id_matricula LIKE '%{$validate->{'ds_search'}}%'
         OR nm_usuario LIKE '%{$validate->{'ds_search'}}%'
@@ -63,6 +59,8 @@ switch (true) {
         $users = $user->all();
         break;
     default:
+        $user->createQuery($query_user . ";");
+        $users = $user->all();
         break;
 }
 
