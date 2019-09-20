@@ -17,14 +17,42 @@
 				</div>
 			</div>
 
-			<div class="table-height border overflow-auto mt-4">
+			<div id="pager" class="pager row justify-content-between form-group mt-4 mx-1">
+				<form>
+					<div class="col-md-8">
+						<button id="btn-group-first" type="button" class="btn btn-secondary col-md-1 border-0 first" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-angle-double-left"></i>
+						</button>
+						<button id="btn-group-prev" type="button" class="btn btn-secondary col-md-1 border-0 prev" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-angle-left prev"></i>
+						</button>
+						<button id="btn-group-first" type="button" class="btn btn-secondary col-md-1 border-0 next" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-angle-right"></i>
+						</button>
+						<button id="btn-group-first" type="button" class="btn btn-secondary col-md-1 border-0 last" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-angle-double-right"></i>
+						</button>
+						<select class="custom-select col-md-3 ml-5 pagesize">
+							<option value="7">7</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="all">Todas as linhas</option>
+						</select>
+					</div>
+					<span class="rounded bg-secondary py-2 px-3 mr-3 text-center text-white small pagedisplay" data-pager-output-filtered></span>
+				</form>
+			</div>
+
+			<div class="table-height border overflow-auto mx-4">
 				<table id="my-table" class="table table-sm table-striped font-size-table">
 				  <thead>
 				    <tr class="bg-secondary text-light">
 				      <th scope="col">
-						<div class="btn-group" role="group">
+						<div class="btn-group btn-group-sm" role="group">
 							<button id="btn-group-matricula" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="small fas fa-search"></i>
+								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-matricula">
 								<div class="form-row ml-2 mr-2">
@@ -35,19 +63,20 @@
 						</div>
 					  </th>
 				      <th scope="col">
-						<div class="btn-group" role="group">
-							<button id="btn-group-nome" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Nome
+						<div class="btn-group btn-group-sm" role="group">
+							<button id="btn-group-nome" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-nome">
 								<div class="form-row ml-2 mr-2">	
 									<input class="form-control form-control-sm col-md-12" id="ds_search_nome" type="search" name="ds_search_nome" placeholder="ds_search_nome" onkeypress="" aria-label="ds_search_nome">
 								</div>
 							</div>
+							<span class="btn btn-secondary border-0">Nome</span>
 						</div>
 					  </th>
 				      <th scope="col">
-						<div class="btn-group" role="group">
+						<div class="btn-group btn-group-sm" role="group">
 							<button id="btn-group-setor" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Setor
 							</button>
@@ -59,7 +88,7 @@
 						</div>
 					  </th>
 				      <th scope="col">
-						<div class="btn-group" role="group">
+						<div class="btn-group btn-group-sm" role="group">
 							<button id="btn-group-cargo" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Cargo
 							</button>
@@ -74,7 +103,7 @@
 						</div>
 					  </th>
 				      <th scope="col">
-						<div class="btn-group" role="group">
+						<div class="btn-group btn-group-sm" role="group">
 							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Login
 							</button>
@@ -89,7 +118,7 @@
 						</div>
 					  </th>
 				      <th scope="col">
-						<div class="btn-group" role="group">
+						<div class="btn-group btn-group-sm" role="group">
 							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Perfil
 							</button>
@@ -104,7 +133,7 @@
 						</div>
 					  </th>
 				      <th scope="col">
-						<div class="btn-group" role="group">
+						<div class="btn-group btn-group-sm" role="group">
 							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Criação
 							</button>
@@ -119,7 +148,7 @@
 						</div>
 					  </th>
 				      <th scope="col">
-						<div class="btn-group" role="group">
+						<div class="btn-group btn-group-sm" role="group">
 							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Atualização
 							</button>
@@ -134,7 +163,7 @@
 						</div>
 					  </th>
 				      <th scope="col" class="text-center">
-						<div class="btn-group" role="group">
+						<div class="btn-group btn-group-sm" role="group">
 							<button id="btn-group-status" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Status
 							</button>
