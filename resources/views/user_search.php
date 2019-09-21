@@ -77,100 +77,88 @@
 					  </th>
 				      <th scope="col">
 						<div class="btn-group btn-group-sm" role="group">
-							<button id="btn-group-setor" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Setor
+							<button id="btn-group-setor" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-setor">
 								<div class="form-row ml-2 mr-2">
 									<input class="form-control form-control-sm col-md-12" id="ds_search_setor" type="search" name="ds_search_setor" placeholder="ds_search_setor" onkeypress="" aria-label="ds_search_setor">
 								</div>
 							</div>
+							<span class="btn btn-secondary border-0">Setor</span>
 						</div>
 					  </th>
 				      <th scope="col">
 						<div class="btn-group btn-group-sm" role="group">
-							<button id="btn-group-cargo" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Cargo
+							<button id="btn-group-cargo" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-cargo">
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-up"></i><span class="ml-3">Ascendente</span></a>
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-down"></i><span class="ml-3">Descendente</span></a>
-								<div class="dropdown-divider"></div>
 								<div class="form-row ml-2 mr-2">
 									<input class="form-control form-control-sm col-md-12" id="ds_search_cargo" type="search" name="ds_search_cargo" placeholder="ds_search_cargo" onkeypress="" aria-label="ds_search_cargo">
 								</div>
 							</div>
+							<span class="btn btn-secondary border-0">Cargo</span>
 						</div>
 					  </th>
 				      <th scope="col">
 						<div class="btn-group btn-group-sm" role="group">
-							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Login
+							<button id="btn-group-login" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-login">
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-up"></i><span class="ml-3">Ascendente</span></a>
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-down"></i><span class="ml-3">Descendente</span></a>
-								<div class="dropdown-divider"></div>
 								<div class="form-row ml-2 mr-2">
 									<input class="form-control form-control-sm col-md-12" id="ds_search_login" type="search" name="ds_search_login" placeholder="ds_search_login" onkeypress="" aria-label="ds_search_login">
 								</div>
 							</div>
+							<span class="btn btn-secondary border-0">Login</span>
 						</div>
 					  </th>
 				      <th scope="col">
 						<div class="btn-group btn-group-sm" role="group">
-							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Perfil
+							<button id="btn-group-login" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-perfil">
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-up"></i><span class="ml-3">Ascendente</span></a>
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-down"></i><span class="ml-3">Descendente</span></a>
-								<div class="dropdown-divider"></div>
 								<div class="form-row ml-2 mr-2">
 									<input class="form-control form-control-sm col-md-12" id="ds_search_perfil" type="search" name="ds_search_perfil" placeholder="ds_search_perfil" onkeypress="" aria-label="ds_search_perfil">
 								</div>
 							</div>
+							<span class="btn btn-secondary border-0">Perfil</span>
 						</div>
 					  </th>
 				      <th scope="col">
 						<div class="btn-group btn-group-sm" role="group">
-							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Criação
+							<button id="btn-group-login" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-perfil">
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-up"></i><span class="ml-3">Ascendente</span></a>
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-down"></i><span class="ml-3">Descendente</span></a>
-								<div class="dropdown-divider"></div>
 								<div class="form-row ml-2 mr-2">
 									<input class="form-control form-control-sm col-md-12" id="ds_search_criacao" type="search" name="ds_search_criacao" placeholder="ds_search_criacao" onkeypress="" aria-label="ds_search_criacao">
 								</div>
 							</div>
+							<span class="btn btn-secondary border-0">Criação</span>
 						</div>
 					  </th>
 				      <th scope="col">
 						<div class="btn-group btn-group-sm" role="group">
-							<button id="btn-group-login" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Atualização
+							<button id="btn-group-login" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-perfil">
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-up"></i><span class="ml-3">Ascendente</span></a>
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-down"></i><span class="ml-3">Descendente</span></a>
-								<div class="dropdown-divider"></div>
 								<div class="form-row ml-2 mr-2">
 									<input class="form-control form-control-sm col-md-12" id="ds_search_atualizacao" type="search" name="ds_search_atualizacao" placeholder="ds_search_atualizacao" onkeypress="" aria-label="ds_search_atualizacao">
 								</div>
 							</div>
+							<span class="btn btn-secondary border-0">Atualização</span>
 						</div>
 					  </th>
 				      <th scope="col" class="text-center">
 						<div class="btn-group btn-group-sm" role="group">
-							<button id="btn-group-status" type="button" class="btn btn-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Status
+							<button id="btn-group-status" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="btn-group-status">
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-up"></i><span class="ml-3">Ascendente</span></a>
-								<a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-down"></i><span class="ml-3">Descendente</span></a>
-								<div class="dropdown-divider"></div>
 								<div class="form-check ml-3 checkbox-success">
 									<input class="form-check-input checkbox-success" type="checkbox" value="" id="check-ativo">
 									<i class="fas fa-circle text-success"></i><span><small class="ml-2" for="check-ativo">Ativo(a)</small></span>
@@ -184,6 +172,7 @@
 									<i class="fas fa-circle text-danger"></i><span><small class="ml-2" for="check-bloqueado">Bloqueado(a)</small></span>
 								</div>
 							</div>
+							<span class="btn btn-secondary border-0">Status</span>
 						</div>
 					  </th>
 				    </tr>
