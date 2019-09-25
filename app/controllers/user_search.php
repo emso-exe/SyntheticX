@@ -55,11 +55,11 @@ switch (true) {
         $users = $user->all();
         break;
     case (!empty($validate->{'ds_search_status'})):
-        $user->createQuery($query_user . " WHERE ds_status LIKE '%{$validate->{'ds_search_status'}}%';");
+        $user->createQuery($query_user . " WHERE ds_status LIKE '{$validate->{'ds_search_status'}}';");
         $users = $user->all();
         break;
     default:
-        $user->createQuery($query_user . ";");
+        $user->createQuery($query_user . " ORDER BY u.id_matricula;");
         $users = $user->all();
         break;
 }
