@@ -18,18 +18,17 @@
 			</div>
 
 			<div id="pager" class="pager row justify-content-between form-group mt-4 mx-1">
-				<form>
 					<div class="col-md-8">
-						<button id="btn-group-first" type="button" class="btn btn-secondary col-md-1 border-0 first" aria-haspopup="true" aria-expanded="false">
+						<button id="btn-group-first" type="button" class="btn btn-secondary col-md-1 p-2 border-0 first" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-angle-double-left"></i>
 						</button>
-						<button id="btn-group-prev" type="button" class="btn btn-secondary col-md-1 border-0 prev" aria-haspopup="true" aria-expanded="false">
+						<button id="btn-group-prev" type="button" class="btn btn-secondary col-md-1 p-2 border-0 prev" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-angle-left prev"></i>
 						</button>
-						<button id="btn-group-first" type="button" class="btn btn-secondary col-md-1 border-0 next" aria-haspopup="true" aria-expanded="false">
+						<button id="btn-group-first" type="button" class="btn btn-secondary col-md-1 p-2 border-0 next" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-angle-right"></i>
 						</button>
-						<button id="btn-group-first" type="button" class="btn btn-secondary col-md-1 border-0 last" aria-haspopup="true" aria-expanded="false">
+						<button id="btn-group-first" type="button" class="btn btn-secondary col-md-1 p-2 border-0 last" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-angle-double-right"></i>
 						</button>
 						<select class="custom-select col-md-3 ml-5 pagesize">
@@ -42,10 +41,9 @@
 						</select>
 					</div>
 					<span class="rounded bg-secondary py-2 px-3 mr-3 text-center text-white small pagedisplay" data-pager-output-filtered></span>
-				</form>
 			</div>
 
-			<div class="table-height border overflow-auto mx-4">
+			<div class="table-height border overflow-auto mt-4">
 				<table id="my-table" class="table table-sm table-striped font-size-table">
 				  <thead>
 				    <tr class="bg-secondary text-light">
@@ -159,16 +157,16 @@
 								<i class="fas fa-search"></i>
 							</button>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="btn-group-status">
-								<div class="form-check ml-3 checkbox-success">
-									<input class="form-check-input checkbox-success" type="checkbox" value="" id="check-ativo">
+								<div class="form-check ml-3">
+									<input class="form-check-input" type="radio" name="ds_search_status" value="ativo" id="check-ativo" onclick="this.form.submit()">
 									<i class="fas fa-circle text-success"></i><span><small class="ml-2" for="check-ativo">Ativo(a)</small></span>
 								</div>
 								<div class="form-check ml-3">
-									<input class="form-check-input" type="checkbox" value="" id="check-inativo">
+									<input class="form-check-input" type="radio" name="ds_search_status" value="inativo" id="check-inativo" onclick="this.form.submit()">
 									<i class="fas fa-circle text-warning"></i><span><small class="ml-2" for="check-inativo">Inativo(a)</small></span>
 								</div>
 								<div class="form-check ml-3">
-									<input class="form-check-input" type="checkbox" value="" id="check-bloqueado">
+									<input class="form-check-input" type="radio" name="ds_search_status" value="bloqueado" id="check-bloqueado" onclick="this.form.submit()">
 									<i class="fas fa-circle text-danger"></i><span><small class="ml-2" for="check-bloqueado">Bloqueado(a)</small></span>
 								</div>
 							</div>
