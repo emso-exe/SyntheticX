@@ -12,7 +12,7 @@
 				<div class="form-row col-md-12">
 					<input class="form-control form-control-lg col-md-5" id="ds_search" type="search" name="ds_search" placeholder="ds_search" onkeypress="" aria-label="ds_search">
 					<button class="btn btn-lg btn-success col-md-2 ml-5" type="submit" name="gravar" value="1"><i class="fas fa-search"></i><span class="ml-3">LOCALIZAR</span></button>
-					<button class="btn btn-lg btn-secondary col-md-2 ml-3" type="submit" name="relatorio" value="0"><i class="fas fa-file-alt"></i><span class="ml-3">RELATÓRIO</span></button>
+					<button class="btn btn-lg btn-secondary col-md-2 ml-3" type="submit" name="relatorio" value="0" id="btn-report"><i class="fas fa-file-alt"></i><span class="ml-3">RELATÓRIO</span></button>
 					<button class="btn btn-lg btn-warning col-md-2 ml-3" type="reset" name="limpar" value="0"><i class="fas fa-eraser"></i><span class="ml-3">LIMPAR</span></button>
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 					<span class="rounded bg-secondary py-2 px-3 mr-3 text-center text-white small pagedisplay" data-pager-output-filtered></span>
 			</div>
 
-			<div class="table-height border overflow-auto mt-4">
+			<div class="table-height border overflow-auto mt-4" id="div-my-table">
 				<table id="my-table" class="table table-sm table-striped font-size-table">
 				  <thead>
 				    <tr class="bg-secondary text-light">
@@ -176,6 +176,32 @@
 				    </tr>
 				  </thead>
 				  <tbody>
+				  <?php foreach ($users as $user): ?>
+				    <tr>
+				      <th scope="row"><?=$user->id_matricula?></th>
+				      <td><?=$user->nm_usuario?></td>
+				      <td><?=$user->nm_setor?></td>
+				      <td><?=$user->nm_cargo?></td>
+					  <td><?=$user->ds_login?></td>
+					  <td><?=$user->ds_perfil?></td>
+					  <td><?=$user->dt_create?></td>
+					  <td><?=$user->dt_update?></td>
+				      <td class="text-center my-status"><?=$user->ds_status?></td>
+					</tr>
+				  <?php endforeach?>
+				  <?php foreach ($users as $user): ?>
+				    <tr>
+				      <th scope="row"><?=$user->id_matricula?></th>
+				      <td><?=$user->nm_usuario?></td>
+				      <td><?=$user->nm_setor?></td>
+				      <td><?=$user->nm_cargo?></td>
+					  <td><?=$user->ds_login?></td>
+					  <td><?=$user->ds_perfil?></td>
+					  <td><?=$user->dt_create?></td>
+					  <td><?=$user->dt_update?></td>
+				      <td class="text-center my-status"><?=$user->ds_status?></td>
+					</tr>
+				  <?php endforeach?>
 				  <?php foreach ($users as $user): ?>
 				    <tr>
 				      <th scope="row"><?=$user->id_matricula?></th>
