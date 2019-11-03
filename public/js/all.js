@@ -20,6 +20,37 @@ $(function () {
 
 });
 
+
+$("#btn-report").click(function () {
+  var header = '<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">';
+  header += '<meta name="viewport" content="width=device-width, initial-scale=1"><title>SyntheticX</title><meta name="description" content="">';
+  header += '<link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="images/icon.png">';
+  header += '<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">';
+  header += '<link rel="stylesheet" href="css/normalize.css">';
+  header += '<link rel="stylesheet" href="css/print.css">';
+  header += '<link rel="stylesheet" href="fonts/fontawesome/css/all.css">';
+  header += '</head><body>';
+
+  var content = $("#div-my-table").html();
+
+  var footer = '</body>';
+  footer += '<div id="page-content-footer" class="bg-secondary border-top fixed-bottom">';
+  footer += '<h6 class="text-dark text-center pt-2">SyntheticX &copy; Estênio Mariano 2019</h6></div>';
+  footer += '<script src="js/popper.min.js"></script>';
+  footer += '<script src="js/jquery-3.4.1.min.js"></script>';
+  footer += '<script src="bootstrap/js/bootstrap.min.js"></script>';
+  footer += '<script src="js/jquery.tablesorter.min.js"></script>';
+  footer += '<script src="js/jquery.tablesorter.pager.js"></script>';
+  footer += '<script src="js/all.js"></script>';
+  footer += '</body></html>';
+
+  var page = header + content + footer;
+
+  var w = window.open('', '_blank');
+  w.document.write(page);
+});
+
+
 $(function () {
 
   // **********************************
