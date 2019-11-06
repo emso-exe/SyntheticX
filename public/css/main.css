@@ -104,6 +104,10 @@ body {
   border-color: var(--primary-85) !important;
 }
 
+.display {
+  display: none;
+}
+
 /*
 *   Global
 *
@@ -217,7 +221,6 @@ body {
 
 .form-control-login-pwd {
   display: inline;
-  width: 90%;
   margin-left: 10px; 
 }
 
@@ -240,4 +243,18 @@ body {
 .table-height {
   height: 50vh !important;
   max-height: calc(100vh) !important;
+}
+
+/*@media print {
+  body * {
+    visibility: hidden;
+  }
+  #my-table, #my-table * {
+    visibility: visible;
+  }
+  #my-table {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
 }
