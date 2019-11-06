@@ -47,7 +47,7 @@
 				<table id="my-table" class="table table-sm table-striped font-size-table">
 				  <thead>
 				  	<tr class="bg-primary text-light text-center display">
-				    	<th scope="col " colspan="9"><h4><span class="bg-primary border-0 opens-regular-italic">Relatório de funcionários</span></h4></th>
+				    	<th scope="col" colspan="9"><h4><span class="bg-primary border-0 opens-regular-italic">Relatório de funcionários</span></h4></th>
 				    </tr>
 				    <tr class="bg-secondary text-light">
 				      <th scope="col">
