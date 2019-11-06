@@ -27,7 +27,7 @@ $("#btn-report").click(function () {
   header += '<link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="images/icon.png">';
   header += '<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">';
   header += '<link rel="stylesheet" href="css/normalize.css">';
-  header += '<link rel="stylesheet" href="css/print.css">';
+  header += '<link rel="stylesheet" href="css/report_print.css">';
   header += '<link rel="stylesheet" href="fonts/fontawesome/css/all.css">';
   header += '</head><body>';
 
