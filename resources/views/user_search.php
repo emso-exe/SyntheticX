@@ -37,7 +37,7 @@
 							<option value="20">20</option>
 							<option value="30">30</option>
 							<option value="40">40</option>
-							<option value="all">Todas as linhas</option>
+							<option value="all" selected>Todas as linhas</option>
 						</select>
 					</div>
 					<span class="rounded bg-secondary py-2 px-3 mr-3 text-center text-white small pagedisplay" data-pager-output-filtered></span>
@@ -46,6 +46,9 @@
 			<div class="table-height border overflow-auto mt-4" id="div-my-table">
 				<table id="my-table" class="table table-sm table-striped font-size-table">
 				  <thead>
+				  	<tr class="bg-primary text-light text-center display">
+				    	<th scope="col" colspan="9"><h4><span class="bg-primary border-0 opens-regular-italic">Relatório de funcionários</span></h4></th>
+				    </tr>
 				    <tr class="bg-secondary text-light">
 				      <th scope="col">
 						<div class="btn-group btn-group-sm" role="group">
@@ -178,7 +181,7 @@
 				  <tbody>
 				  <?php foreach ($users as $user): ?>
 				    <tr>
-				      <th scope="row"><?=$user->id_matricula?></th>
+				      <td scope="row"><?=$user->id_matricula?></td>
 				      <td><?=$user->nm_usuario?></td>
 				      <td><?=$user->nm_setor?></td>
 				      <td><?=$user->nm_cargo?></td>
@@ -191,7 +194,7 @@
 				  <?php endforeach?>
 				  <?php foreach ($users as $user): ?>
 				    <tr>
-				      <th scope="row"><?=$user->id_matricula?></th>
+				      <td scope="row"><?=$user->id_matricula?></td>
 				      <td><?=$user->nm_usuario?></td>
 				      <td><?=$user->nm_setor?></td>
 				      <td><?=$user->nm_cargo?></td>
@@ -204,7 +207,7 @@
 				  <?php endforeach?>
 				  <?php foreach ($users as $user): ?>
 				    <tr>
-				      <th scope="row"><?=$user->id_matricula?></th>
+				      <td scope="row"><?=$user->id_matricula?></td>
 				      <td><?=$user->nm_usuario?></td>
 				      <td><?=$user->nm_setor?></td>
 				      <td><?=$user->nm_cargo?></td>
