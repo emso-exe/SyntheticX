@@ -6,7 +6,6 @@
 
 :root {
   /* list default bootstrap */
-
   /*--blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -28,7 +27,6 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;*/
-
   /* use project */
   --primary-95: #e6f2ff;
   --primary-85: #b3d7ff;
@@ -41,45 +39,58 @@
 */
 
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i&display=swap'); /* light */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap'); /* regular */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap');
+/* regular */
+
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,600i&display=swap'); /* semi-bold */
+
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,700i&display=swap'); /* bold */
+
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:800,800i&display=swap'); /* extra-bold */
 
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:100,100i&display=swap'); /* thin */
+
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:200,200i&display=swap'); /* extra-light */
+
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:300,300i&display=swap'); /* light */
+
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:400,400i&display=swap'); /* regular */
+
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:500,500i&display=swap'); /* medium */
-@import url('https://fonts.googleapis.com/css?family=Exo+2:600,600i&display=swap'); /* semi-bold */
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:600,600i&display=swap');
+/* semi-bold */
+
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:700,700i&display=swap'); /* bold */
+
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:800,800i&display=swap'); /* extra-bold */
+
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:900,900i&display=swap'); /* black */
 
 @font-face {
-	font-family: 'Open Sans';
-	src: url('/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'Open Sans';
+  src: url('/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'Exo 2';
-	src: url('/fonts/Exo_2/Exo2-SemiBoldItalic.ttf') format('truetype');
+  font-family: 'Exo 2';
+  src: url('/fonts/Exo_2/Exo2-SemiBoldItalic.ttf') format('truetype');
 }
 
 * {
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .exo2-semi-bold-italic {
-	font-family: 'Exo 2', sans-serif;
-	color: var(--primary);
+  font-family: 'Exo 2', sans-serif;
+  color: var(--primary);
 }
 
 .opens-regular-italic {
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
 }
-
 
 /*
 *   Global
@@ -107,6 +118,30 @@ body {
 }
 
 #my-table {
- width: 98%;
- margin: 5px 10px 50px 10px !important;
+  width: 98%;
+  margin: 5px 10px 50px 10px !important;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+  }
+  /*i{
+    visibility: hidden;
+  }*/
+  @page {
+    margin: 1cm 0.5cm 1cm 0.5cm;
+  }
+  nav, footer, video, audio, object, embed, #page-content-footer {
+    display: none;
+  }
 }
