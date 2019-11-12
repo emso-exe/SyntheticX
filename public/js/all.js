@@ -33,6 +33,10 @@ $("#btn-report").click(function () {
 
   var content = $("#div-my-table").html();
 
+//$('ul li a').removeClass('active');
+//$('table > tbody > tr > td').removeClass('my-status');
+//$('#div-my-table  > table > tbody > tr > td').removeClass('my-status');
+
   var footer = '</body>';
   footer += '<div id="page-content-footer" class="bg-secondary border-top fixed-bottom">';
   footer += '<h6 class="text-dark text-center pt-2">SyntheticX &copy; Estênio Mariano 2019</h6></div>';
