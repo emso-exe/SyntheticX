@@ -135,9 +135,9 @@ body {
     padding: 0;
     line-height: 1.4em;
   }
-  /*i{
+  i {
     visibility: hidden;
-  }*/
+  }
   @page {
     margin: 1cm 0.5cm 1cm 0.5cm;
   }
