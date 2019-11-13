@@ -244,17 +244,3 @@ body {
   height: 50vh !important;
   max-height: calc(100vh) !important;
 }
-
-/*@media print {
-  body * {
-    visibility: hidden;
-  }
-  #my-table, #my-table * {
-    visibility: visible;
-  }
-  #my-table {
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
-}
