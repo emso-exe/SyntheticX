@@ -5,13 +5,13 @@ $(function () {
     var op = $el.text();
     switch (op) {
       case 'Ativo':
-        $el.html('<i class="fas fa-circle fa-small-size text-success"></i>');
+        $el.html('<i class="fas fa-circle fa-small-size text-success" data-toggle="tooltip" data-placement="right" title="Ativo"></i> <span class="display">Ativo</span>');
         break;
       case 'Inativo':
-        $el.html('<i class="fas fa-circle fa-small-size text-warning"></i>');
+        $el.html('<i class="fas fa-circle fa-small-size text-warning" data-toggle="tooltip" data-placement="right" title="Inativo"></i> <span class="display">Inativo</span>');
         break;
       case 'Bloqueado':
-        $el.html('<i class="fas fa-circle fa-small-size text-danger"></i>');
+        $el.html('<i class="fas fa-circle fa-small-size text-danger" data-toggle="tooltip" data-placement="right" title="Bloqueado"></i> <span class="display">Bloqueado</span>');
         break;
       default:
         break;
@@ -22,6 +22,7 @@ $(function () {
 
 
 $("#btn-report").click(function () {
+
   var header = '<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">';
   header += '<meta name="viewport" content="width=device-width, initial-scale=1"><title>SyntheticX</title><meta name="description" content="">';
   header += '<link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="images/icon.png">';
@@ -33,12 +34,7 @@ $("#btn-report").click(function () {
 
   var content = $("#div-my-table").html();
 
-//$('ul li a').removeClass('active');
-//$('table > tbody > tr > td').removeClass('my-status');
-//$('#div-my-table  > table > tbody > tr > td').removeClass('my-status');
-
-  var footer = '</body>';
-  footer += '<div id="page-content-footer" class="bg-secondary border-top fixed-bottom">';
+  var footer = '<div id="page-content-footer" class="bg-secondary border-top fixed-bottom">';
   footer += '<h6 class="text-dark text-center pt-2">SyntheticX &copy; Estênio Mariano 2019</h6></div>';
   footer += '<script src="js/popper.min.js"></script>';
   footer += '<script src="js/jquery-3.4.1.min.js"></script>';
