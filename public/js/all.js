@@ -20,6 +20,10 @@ $(function () {
 
 });
 
+$("#btn-print").click(function(){
+  window.print();
+});
+
 
 $("#btn-report").click(function () {
 
@@ -30,11 +34,11 @@ $("#btn-report").click(function () {
   header += '<link rel="stylesheet" href="css/normalize.css">';
   header += '<link rel="stylesheet" href="css/report_print.css">';
   header += '<link rel="stylesheet" href="fonts/fontawesome/css/all.css">';
-  header += '</head><body>';
+  header += '</head><body><page size="A4" layout="landscape">';
 
   var content = $("#div-my-table").html();
 
-  var footer = '<div id="page-content-footer" class="bg-secondary border-top fixed-bottom">';
+  var footer = '</page><div id="page-content-footer" class="bg-secondary border-top fixed-bottom">';
   footer += '<h6 class="text-dark text-center pt-2">SyntheticX &copy; Estênio Mariano 2019</h6></div>';
   footer += '<script src="js/popper.min.js"></script>';
   footer += '<script src="js/jquery-3.4.1.min.js"></script>';
