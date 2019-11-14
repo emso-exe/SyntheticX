@@ -129,17 +129,25 @@ body {
     text-shadow: none !important;
     filter: none !important;
     -ms-filter: none !important;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.8rem !important;
   }
   body {
     margin: 0;
     padding: 0;
     line-height: 1.4em;
   }
-  i {
+  #font-size-title {
+    font-size: 1rem !important;
+  }
+  i, button {
     visibility: hidden;
   }
-  @page {
+  page[size="A4"][layout="landscape"] {
+    width: 29.7cm;
+    height: 21cm;
     margin: 1cm 0.5cm 1cm 0.5cm;
+    box-shadow: 0;
   }
   nav, footer, video, audio, object, embed, #page-content-footer {
     display: none;
