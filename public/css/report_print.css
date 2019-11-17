@@ -15,9 +15,9 @@
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
-  --cyan: #17a2b8;
+  --cyan: #17a2b8;*/
   --white: #fff;
-  --gray: #6c757d;
+  /*--gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #007bff;
   --secondary: #6c757d;
@@ -84,7 +84,8 @@
 
 .exo2-semi-bold-italic {
   font-family: 'Exo 2', sans-serif;
-  color: var(--primary);
+  color: var(--white);
+  ;
 }
 
 .opens-regular-italic {
@@ -142,6 +143,9 @@ body {
   }
   i, button {
     visibility: hidden;
+  }
+  tr:nth-child(odd) {
+    background-color: #cccccc !important;
   }
   page[size="A4"][layout="landscape"] {
     width: 29.7cm;
