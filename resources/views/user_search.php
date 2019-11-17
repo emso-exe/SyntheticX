@@ -47,9 +47,8 @@
 				<table id="my-table" class="table table-sm table-striped font-size-table">
 				  <thead>
 				  	<tr class="bg-primary text-light text-center display">
-						<th scope="col" colspan="8">
-							<h4><span id="font-size-title" class="border-0 opens-regular-italic">Relatório de funcionários</span></h4>
-						</th>
+						<th><span class="navbar-brand exo2-semi-bold-italic">SyntheticX</span></th>
+						<th scope="col" colspan="7"><h4><span id="font-size-title" class="border-0 opens-regular-italic">Relatório de funcionários</span></h4></th>
 						<th>
 							<button class="btn btn-lg btn-primary col-md-6" type="submit" name="imprimir" value="1" id="btn-print"><i class="fas fa-print"></i></button>
 						</th>
