@@ -10,7 +10,7 @@
         	<div class="form-group">
 				<label for="ds_search" class="col-md-12 col-form-label col-form-label-lg">Matrícula, nome, login, setor, cargo, perfil ou status</label>
 				<div class="form-row col-md-12">
-					<input class="form-control form-control-lg col-md-5" id="ds_search" type="search" name="ds_search" placeholder="ds_search" onkeypress="" aria-label="ds_search">
+					<input class="form-control form-control-lg col-md-5" id="ds_search" type="search" name="ds_search" placeholder="" onkeypress="" aria-label="ds_search">
 					<button class="btn btn-lg btn-success col-md-2 ml-5" type="submit" name="gravar" value="1"><i class="fas fa-search"></i><span class="ml-3">LOCALIZAR</span></button>
 					<button class="btn btn-lg btn-secondary col-md-2 ml-3" type="submit" name="relatorio" value="0" id="btn-report"><i class="fas fa-file-alt"></i><span class="ml-3">RELATÓRIO</span></button>
 					<button class="btn btn-lg btn-warning col-md-2 ml-3" type="reset" name="limpar" value="0"><i class="fas fa-eraser"></i><span class="ml-3">LIMPAR</span></button>
@@ -61,7 +61,7 @@
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-matricula">
 								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_matricula" type="search" name="ds_search_matricula" placeholder="ds_search_matricula" onkeypress="" aria-label="ds_search_matricula">
+									<input class="form-control form-control-sm col-md-12" id="ds_search_matricula" type="search" name="ds_search_matricula" placeholder="Matrícula" onkeypress="" aria-label="ds_search_matricula">
 								</div>
 							</div>
 							<span class="btn btn-secondary border-0">Matrícula</span>
@@ -74,7 +74,7 @@
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-nome">
 								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_nome" type="search" name="ds_search_nome" placeholder="ds_search_nome" onkeypress="" aria-label="ds_search_nome">
+									<input class="form-control form-control-sm col-md-12" id="ds_search_nome" type="search" name="ds_search_nome" placeholder="Nome" onkeypress="" aria-label="ds_search_nome">
 								</div>
 							</div>
 							<span class="btn btn-secondary border-0">Nome</span>
@@ -87,7 +87,7 @@
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-setor">
 								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_setor" type="search" name="ds_search_setor" placeholder="ds_search_setor" onkeypress="" aria-label="ds_search_setor">
+									<input class="form-control form-control-sm col-md-12" id="ds_search_setor" type="search" name="ds_search_setor" placeholder="Setor" onkeypress="" aria-label="ds_search_setor">
 								</div>
 							</div>
 							<span class="btn btn-secondary border-0">Setor</span>
@@ -100,7 +100,7 @@
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-cargo">
 								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_cargo" type="search" name="ds_search_cargo" placeholder="ds_search_cargo" onkeypress="" aria-label="ds_search_cargo">
+									<input class="form-control form-control-sm col-md-12" id="ds_search_cargo" type="search" name="ds_search_cargo" placeholder="Cargo" onkeypress="" aria-label="ds_search_cargo">
 								</div>
 							</div>
 							<span class="btn btn-secondary border-0">Cargo</span>
@@ -113,7 +113,7 @@
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-login">
 								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_login" type="search" name="ds_search_login" placeholder="ds_search_login" onkeypress="" aria-label="ds_search_login">
+									<input class="form-control form-control-sm col-md-12" id="ds_search_login" type="search" name="ds_search_login" placeholder="Login" onkeypress="" aria-label="ds_search_login">
 								</div>
 							</div>
 							<span class="btn btn-secondary border-0">Login</span>
@@ -126,7 +126,7 @@
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-perfil">
 								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_perfil" type="search" name="ds_search_perfil" placeholder="ds_search_perfil" onkeypress="" aria-label="ds_search_perfil">
+									<input class="form-control form-control-sm col-md-12" id="ds_search_perfil" type="search" name="ds_search_perfil" placeholder="Perfil" onkeypress="" aria-label="ds_search_perfil">
 								</div>
 							</div>
 							<span class="btn btn-secondary border-0">Perfil</span>
@@ -139,7 +139,7 @@
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-perfil">
 								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_criacao" type="search" name="ds_search_criacao" placeholder="ds_search_criacao" onkeypress="" aria-label="ds_search_criacao">
+									<input class="form-control form-control-sm col-md-12" id="ds_search_criacao" type="search" name="ds_search_criacao" placeholder="Criação" onkeypress="" aria-label="ds_search_criacao">
 								</div>
 							</div>
 							<span class="btn btn-secondary border-0">Criação</span>
@@ -152,7 +152,7 @@
 							</button>
 							<div class="dropdown-menu" aria-labelledby="btn-group-perfil">
 								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_atualizacao" type="search" name="ds_search_atualizacao" placeholder="ds_search_atualizacao" onkeypress="" aria-label="ds_search_atualizacao">
+									<input class="form-control form-control-sm col-md-12" id="ds_search_atualizacao" type="search" name="ds_search_atualizacao" placeholder="Atualização" onkeypress="" aria-label="ds_search_atualizacao">
 								</div>
 							</div>
 							<span class="btn btn-secondary border-0">Atualização</span>
@@ -183,32 +183,6 @@
 				    </tr>
 				  </thead>
 				  <tbody>
-				  <?php foreach ($users as $user): ?>
-				    <tr>
-				      <td scope="row"><?=$user->id_matricula?></td>
-				      <td><?=$user->nm_usuario?></td>
-				      <td><?=$user->nm_setor?></td>
-				      <td><?=$user->nm_cargo?></td>
-					  <td><?=$user->ds_login?></td>
-					  <td><?=$user->ds_perfil?></td>
-					  <td><?=$user->dt_create?></td>
-					  <td><?=$user->dt_update?></td>
-				      <td class="text-center my-status"><?=$user->ds_status?></td>
-					</tr>
-				  <?php endforeach?>
-				  <?php foreach ($users as $user): ?>
-				    <tr>
-				      <td scope="row"><?=$user->id_matricula?></td>
-				      <td><?=$user->nm_usuario?></td>
-				      <td><?=$user->nm_setor?></td>
-				      <td><?=$user->nm_cargo?></td>
-					  <td><?=$user->ds_login?></td>
-					  <td><?=$user->ds_perfil?></td>
-					  <td><?=$user->dt_create?></td>
-					  <td><?=$user->dt_update?></td>
-				      <td class="text-center my-status"><?=$user->ds_status?></td>
-					</tr>
-				  <?php endforeach?>
 				  <?php foreach ($users as $user): ?>
 				    <tr>
 				      <td scope="row"><?=$user->id_matricula?></td>
