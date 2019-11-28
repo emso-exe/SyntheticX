@@ -1,9 +1,14 @@
 <?php
 
-//use app\models\User;
 use app\classes\Layout;
+use app\classes\Validation;
+use app\models\Query;
 
-//$user = new User;
+$validation = new Validation;
+$validate = $validation->validate($_POST);
+
+$user = new Query;
+
 
 /*require "../app/functions/helpers.php";
 dd($user->all());*/
