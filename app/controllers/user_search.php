@@ -19,7 +19,7 @@ $user = new Query;
 
 switch (true) {
     case (!empty($validate->{'ds_search'})):
-        $user->createQuery($query_user . " WHERE u.id_matricula LIKE '%{$validate->{'ds_search'}}%'
+        $user->createSelect($query_user . " WHERE u.id_matricula LIKE '%{$validate->{'ds_search'}}%'
         OR nm_usuario LIKE '%{$validate->{'ds_search'}}%'
         OR nm_setor LIKE '%{$validate->{'ds_search'}}%'
         OR nm_cargo LIKE '%{$validate->{'ds_search'}}%'
@@ -31,35 +31,35 @@ switch (true) {
         $users = $user->all();
         break;
     case (!empty($validate->{'ds_search_matricula'})):
-        $user->createQuery($query_user . " WHERE u.id_matricula LIKE '%{$validate->{'ds_search_matricula'}}%';");
+        $user->createSelect($query_user . " WHERE u.id_matricula LIKE '%{$validate->{'ds_search_matricula'}}%';");
         $users = $user->all();
         break;
     case (!empty($validate->{'ds_search_nome'})):
-        $user->createQuery($query_user . " WHERE nm_usuario LIKE '%{$validate->{'ds_search_nome'}}%';");
+        $user->createSelect($query_user . " WHERE nm_usuario LIKE '%{$validate->{'ds_search_nome'}}%';");
         $users = $user->all();
         break;
     case (!empty($validate->{'ds_search_setor'})):
-        $user->createQuery($query_user . " WHERE nm_setor LIKE '%{$validate->{'ds_search_setor'}}%';");
+        $user->createSelect($query_user . " WHERE nm_setor LIKE '%{$validate->{'ds_search_setor'}}%';");
         $users = $user->all();
         break;
     case (!empty($validate->{'ds_search_cargo'})):
-        $user->createQuery($query_user . " WHERE nm_cargo LIKE '%{$validate->{'ds_search_cargo'}}%';");
+        $user->createSelect($query_user . " WHERE nm_cargo LIKE '%{$validate->{'ds_search_cargo'}}%';");
         $users = $user->all();
         break;
     case (!empty($validate->{'ds_search_login'})):
-        $user->createQuery($query_user . " WHERE ds_login LIKE '%{$validate->{'ds_search_login'}}%';");
+        $user->createSelect($query_user . " WHERE ds_login LIKE '%{$validate->{'ds_search_login'}}%';");
         $users = $user->all();
         break;
     case (!empty($validate->{'ds_search_perfil'})):
-        $user->createQuery($query_user . " WHERE ds_perfil LIKE '%{$validate->{'ds_search_perfil'}}%';");
+        $user->createSelect($query_user . " WHERE ds_perfil LIKE '%{$validate->{'ds_search_perfil'}}%';");
         $users = $user->all();
         break;
     case (!empty($validate->{'ds_search_status'})):
-        $user->createQuery($query_user . " WHERE ds_status LIKE '{$validate->{'ds_search_status'}}';");
+        $user->createSelect($query_user . " WHERE ds_status LIKE '{$validate->{'ds_search_status'}}';");
         $users = $user->all();
         break;
     default:
-        $user->createQuery($query_user . " ORDER BY u.id_matricula;");
+        $user->createSelect($query_user . " ORDER BY u.id_matricula;");
         $users = $user->all();
         break;
 }
