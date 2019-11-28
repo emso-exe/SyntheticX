@@ -25,7 +25,7 @@ abstract class Crud
         return $list->fetchAll();
     }
 
-    public function find(){
+    public function insert(){
         
     }
 
