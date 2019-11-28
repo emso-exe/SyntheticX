@@ -7,9 +7,18 @@ class Query extends Crud
 
     protected $sql;
 
-    public function createQuery(string $query)
+    public function createSelect(string $select)
     {
-        $this->sql = $query;
+        $this->sql = $select;
+    }
+
+    public function createInsert($table, $attributes)
+    {
+        $insert = "INSERT INTO {$table} (";
+        $insert .= implode(',', array_keys($attributes)) . " VALUES (";
+        $insert .= ":" . implode(', :', array_keys($attributes)) . ");";
+
+        $this->sql = $insert;
     }
 
 }
