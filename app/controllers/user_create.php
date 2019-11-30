@@ -9,7 +9,7 @@ $validate   = $validation->validate($_POST);
 
 $user = new Query;
 
-$cadastrado = $user->createInsert('usuario', $validate);
+$user->createInsert('usuario', $validate);
 
 //$new_user = $user->insert();
 
