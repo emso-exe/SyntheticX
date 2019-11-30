@@ -6,6 +6,8 @@ class Query extends Crud
 {
 
     protected $sql;
+    protected $table;
+    protected $attributes;
 
     public function createSelect(string $select)
     {
@@ -14,11 +16,11 @@ class Query extends Crud
 
     public function createInsert($table, $attributes)
     {
-        $insert = "INSERT INTO {$table} (";
-        $insert .= implode(',', array_keys($attributes)) . " VALUES (";
-        $insert .= ":" . implode(', :', array_keys($attributes)) . ");";
 
-        $this->sql = $insert;
+        $this->table      = $table;
+        $this->attributes = (array) $attributes;
+
+        //echo "<h1>---> {$this->table}<br> ---> <pre>".print_r($this->attributes)."</pre></h1>";
     }
 
 }
