@@ -18,15 +18,22 @@ abstract class Crud
 
     public function all()
     {
-        $sql  = $this->sql;
-        $list = $this->connection->prepare($sql);
+        $list = $this->connection->prepare($this->sql);
         $list->execute();
 
         return $list->fetchAll();
     }
 
-    public function insert(){
-        
+    public function insert()
+    {
+        $sql = "INSERT INTO {$this->table} (";
+        $sql .= implode(',', array_keys($this->attributes)) . ") VALUES (";
+        $sql .= ":" . implode(', :', array_keys($this->attributes)) . ");";
+
+        echo $sql;
+
+        $insert = $this->connection->prepare($sql);
+        return $insert->execute($this->attributes);
     }
 
 }
