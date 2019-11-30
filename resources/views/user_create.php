@@ -5,16 +5,16 @@
 	</div>
 	<div class="d-block">
 
-		<form class="m-4" id="form-user-create" name="form-user-create" action="" method="POST" onSubmit="">
+		<form class="m-4" id="form-user-create" name="form-user-create" action="user_create" method="POST" onSubmit="">
 
         	<div class="form-group">
 				<label for="cd_matricula" class="col-md-2 col-form-label col-form-label-lg">Matrícula</label>
-				<input class="col-md-11 ml-3 form-control form-control-lg" id="cd_matricula" type="text" name="cd_matricula" placeholder="cd_matricula" onkeypress="" required>
+				<input class="col-md-11 ml-3 form-control form-control-lg" id="id_matricula" type="text" name="id_matricula" placeholder="id_matricula" onkeypress="" required>
 			</div>
 
         	<div class="form-group">
 				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
-				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_nome" type="text" name="nm_nome" placeholder="nm_nome" onkeypress="" required>
+				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_usuario" type="text" name="nm_usuario" placeholder="nm_usuario" onkeypress="" required>
 			</div>
 
         	<div class="form-group">
@@ -27,7 +27,7 @@
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
       				<select class="col-md-10 ml-3 form-control form-control-lg" id="setor" type="text" name="cd_setor" placeholder="cd_setor" onchange="" required>
 						<option value="">Selecione um setor</option>
-						<option value="">CPD</option>
+						<option value="1">CPD</option>
 						<option value="">Suporte</option>
 					</select>
 				</div>
@@ -36,7 +36,7 @@
 					<label for="cd_cargo" class="col-md-2 col-form-label col-form-label-lg">Cargo</label>
       				<select class="col-md-10 ml-3 form-control form-control-lg" id="cd_cargo" type="text" name="cd_cargo" placeholder="cd_cargo" onchange="" required>
 						<option value="0">Selecione um cargo</option>
-						<option value="0">Operador de CPD</option>
+						<option value="1">Operador de CPD</option>
 						<option value="0">Analista de suporte</option>
 					</select>
 				</div>
