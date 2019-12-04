@@ -16,11 +16,8 @@ class Query extends Crud
 
     public function createInsert($table, $attributes)
     {
-
         $this->table      = $table;
         $this->attributes = (array) $attributes;
-
-        //echo "<h1>---> {$this->table}<br> ---> <pre>".print_r($this->attributes)."</pre></h1>";
     }
 
 }
