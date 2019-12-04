@@ -30,8 +30,6 @@ abstract class Crud
         $sql .= implode(',', array_keys($this->attributes)) . ") VALUES (";
         $sql .= ":" . implode(', :', array_keys($this->attributes)) . ");";
 
-        echo $sql;
-
         $insert = $this->connection->prepare($sql);
         return $insert->execute($this->attributes);
     }
