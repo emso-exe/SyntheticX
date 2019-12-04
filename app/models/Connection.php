@@ -81,6 +81,10 @@ final class Connection
             } catch (PDOException $e) {
 
                 die("Erro: <code>{$e->getMessage()}</code>");
+
+            } catch (Exception $e) {
+
+                die("Erro: <code>{$e->getMessage()}</code>");
             }
         }
 
