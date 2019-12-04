@@ -19,13 +19,13 @@
 
         	<div class="form-group">
 				<label for="nm_login" class="col-md-2 col-form-label col-form-label-lg">Login</label>
-				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_login" type="text" name="nm_login" placeholder="nm_login" onkeypress="" required>
+				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_login" type="text" name="ds_login" placeholder="ds_login" onkeypress="" required>
 			</div>
 
 			<div class="form-row">
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
-      				<select class="col-md-10 ml-3 form-control form-control-lg" id="setor" type="text" name="cd_setor" placeholder="cd_setor" onchange="" required>
+      				<select class="col-md-10 ml-3 form-control form-control-lg" id="setor" type="text" name="id_setor" placeholder="id_setor" onchange="" required>
 						<option value="">Selecione um setor</option>
 						<option value="1">CPD</option>
 						<option value="">Suporte</option>
@@ -34,7 +34,7 @@
 
     			<div class="form-group col-md-6" >
 					<label for="cd_cargo" class="col-md-2 col-form-label col-form-label-lg">Cargo</label>
-      				<select class="col-md-10 ml-3 form-control form-control-lg" id="cd_cargo" type="text" name="cd_cargo" placeholder="cd_cargo" onchange="" required>
+      				<select class="col-md-10 ml-3 form-control form-control-lg" id="cd_cargo" type="text" name="id_cargo" placeholder="id_cargo" onchange="" required>
 						<option value="0">Selecione um cargo</option>
 						<option value="1">Operador de CPD</option>
 						<option value="0">Analista de suporte</option>
