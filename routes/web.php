@@ -26,6 +26,7 @@ $routes = [
     '/sector_position_search_edit' => 'app/controllers/sector_position_search_edit',
     '/sector_position_edit'        => 'app/controllers/sector_position_edit',
     '/sector_position_delete'      => 'app/controllers/sector_position_delete',
+
 ];
 
 $uri = Uri::load();
