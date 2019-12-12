@@ -30,6 +30,14 @@ if (!empty($_POST)) {
     $user->insert();
 }
 
+$select1 = new Query;
+$select1->createSelect("SELECT id_setor, nm_setor FROM setor ORDER BY nm_setor;");
+$sector = $select1->all();
+
+$select2 = new Query;
+$select2->createSelect("SELECT id_cargo, id_setor, nm_cargo FROM cargo ORDER BY nm_cargo;");
+$position = $select2->all();
+
 $layout->add('layout_content');
 
 $content = new Layout;
