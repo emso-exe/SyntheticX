@@ -20,6 +20,16 @@ $(function () {
 
 });
 
+var cargo = $('select[name="id_cargo"] option');
+$('select[name="id_setor"]').on('change', function () {
+    var setor = this.value;
+    var novoSelect = cargo.filter(function () {
+        return $(this).data('position') == setor;
+    });
+    $('select[name="id_cargo"]').html(novoSelect);
+});
+
+
 $("#btn-print").click(function(){
   window.print();
 });
