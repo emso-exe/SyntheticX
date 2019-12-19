@@ -7,17 +7,17 @@
 
 		<form class="m-4" id="form-user-create" name="form-user-create" action="user_create" method="POST" onSubmit="">
 
-        	<div class="form-group">
+        	<!--<div class="form-group">
 				<label for="cd_matricula" class="col-md-2 col-form-label col-form-label-lg">Matrícula</label>
 				<input class="col-md-11 ml-3 form-control form-control-lg" id="id_matricula" type="text" name="id_matricula" placeholder="id_matricula" onkeypress="" required>
-			</div>
+			</div>-->
 
         	<div class="form-group">
 				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
 				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_usuario" type="text" name="nm_usuario" placeholder="nm_usuario" onkeypress="" required>
 			</div>
 
-        	<div class="form-group">
+        	<!--<div class="form-group">
 				<label for="nm_login" class="col-md-2 col-form-label col-form-label-lg">Login</label>
 				<div class="input-group">
 					<input class="col-md-9 ml-3 form-control form-control-lg" id="nm_login" aria-describedby="nm_login" type="text" name="ds_login" placeholder="ds_login" onkeypress="" required>
@@ -25,9 +25,9 @@
     					<button class="px-4 btn btn-secondary" type="button" id="nm_login">&nbsp;&nbsp;&nbsp;&nbsp;GERAR LOGIN&nbsp;&nbsp;&nbsp;&nbsp;</button>
   					</div>
 				</div>
-			</div>
+			</div>-->
 
-			<div class="form-row">
+			<div class="form-row mt-5">
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
       				<select class="col-md-10 ml-3 form-control form-control-lg" id="id_setor" type="text" name="id_setor" placeholder="id_setor" onchange="" required>
@@ -41,7 +41,7 @@
     			<div class="form-group col-md-6" >
 					<label for="cd_cargo" class="col-md-2 col-form-label col-form-label-lg">Cargo</label>
       				<select class="col-md-10 ml-3 form-control form-control-lg" id="id_cargo" type="text" name="id_cargo" placeholder="id_cargo" onchange="" required>
-						<option value="0">Selecione um cargo</option>
+						<option data-position="0" value="0">Selecione um cargo</option>
 						<?php foreach ($position as $option): ?>
 							<option data-position="<?=$option->id_setor?>" value="<?=$option->id_cargo?>"><?=$option->nm_cargo?></option>
 						<?php endforeach?>
@@ -49,7 +49,7 @@
 				</div>
 			</div>
 
-			<div class="form-row col-md-12 justify-content-center">
+			<div class="form-row col-md-12 justify-content-center mt-5">
 				<button class="btn btn-lg btn-success m-4 col-md-4" type="submit" name="gravar" value="1"><i class="fas fa-save"></i><span class="ml-4">CADASTRAR</span></button>
 				<button class="btn btn-lg btn-warning m-4 col-md-4" type="reset" name="limpar" value="0"><i class="fas fa-eraser"></i><span class="ml-4">LIMPAR</span></button>
 			</div>
