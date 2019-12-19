@@ -3,23 +3,35 @@
 use app\classes\Layout;
 use app\classes\Validation;
 use app\models\Query;
+use app\models\Login;
 
 if (!empty($_POST)) {
 
     $validation  = new Validation;
     $validate    = $validation->validate($_POST);
     
+    $selectmax = new Query;
+    $selectmax->createSelect("SELECT MAX(id_matricula) + 1 as newid FROM usuario;");
+    $idmatricula = $selectmax->all();
+
+    foreach ($idmatricula as $key => $value){
+        $newmatricula = $value->newid;
+    }
+
+    $login = new Login;
+    $newlogin = $login->createLogin($newmatricula, $validate->{'nm_usuario'});
+    
     $attributes1 = [
-        'id_matricula' => $validate->{'id_matricula'},
+        'id_matricula' => $newmatricula,
         'nm_usuario'   => $validate->{'nm_usuario'},
         'id_cargo'     => $validate->{'id_cargo'},
-        'id_status'    => $validate->{'id_status'} = 1,
+        'id_status'    => 1,
     ];
 
     $attributes2 = [
-        'id_matricula' => $validate->{'id_matricula'},
-        'ds_login'     => $validate->{'ds_login'},
-        'ps_senha'     => $validate->{'ps_senha'} = 0,
+        'id_matricula' => $newmatricula,
+        'ds_login'     => $newlogin,
+        'ps_senha'     => 0,
     ];
 
     $user = new Query;
