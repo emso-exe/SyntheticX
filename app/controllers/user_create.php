@@ -2,25 +2,25 @@
 
 use app\classes\Layout;
 use app\classes\Validation;
-use app\models\Query;
 use app\models\Login;
+use app\models\Query;
 
 if (!empty($_POST)) {
 
-    $validation  = new Validation;
-    $validate    = $validation->validate($_POST);
-    
+    $validation = new Validation;
+    $validate   = $validation->validate($_POST);
+
     $selectmax = new Query;
     $selectmax->createSelect("SELECT MAX(id_matricula) + 1 as newid FROM usuario;");
     $idmatricula = $selectmax->all();
 
-    foreach ($idmatricula as $key => $value){
+    foreach ($idmatricula as $key => $value) {
         $newmatricula = $value->newid;
     }
 
-    $login = new Login;
+    $login    = new Login;
     $newlogin = $login->createLogin($newmatricula, $validate->{'nm_usuario'});
-    
+
     $attributes1 = [
         'id_matricula' => $newmatricula,
         'nm_usuario'   => $validate->{'nm_usuario'},
@@ -40,6 +40,8 @@ if (!empty($_POST)) {
     $user->insert();
     $user->createInsert('login', $attributes2);
     $user->insert();
+
+    header('Location: user_create');
 }
 
 $select1 = new Query;
