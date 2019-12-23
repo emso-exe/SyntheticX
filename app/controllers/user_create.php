@@ -35,13 +35,23 @@ if (!empty($_POST)) {
     ];
 
     $user = new Query;
-
     $user->createInsert('usuario', $attributes1);
     $user->insert();
     $user->createInsert('login', $attributes2);
     $user->insert();
 
-    header('Location: user_create');
+    $selectuser = new Query;
+    $selectuser->createSelect("SELECT u.id_matricula, u.nm_usuario, l.ds_login, s.nm_setor, c.nm_cargo, u.dt_create
+    FROM usuario AS u
+    INNER JOIN login AS l ON l.id_matricula = u.id_matricula
+    INNER JOIN cargo AS c ON c.id_cargo = u.id_cargo
+    INNER JOIN setor AS s ON s.id_setor = c.id_setor
+    WHERE u.id_matricula={$newmatricula};");
+    $newuser = $selectuser->all();
+
+    $jsonuser = base64_encode(json_encode($newuser));
+
+    header('Location: user_create?u=' . $jsonuser . '');
 }
 
 $select1 = new Query;
