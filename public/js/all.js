@@ -29,6 +29,10 @@ $('select[name="id_setor"]').on('change', function () {
     $('select[name="id_cargo"]').html(novoSelect);
 });
 
+$(document).ready(function() {
+  $('#myModal').modal('show');
+});
+
 
 $("#btn-print").click(function(){
   window.print();
