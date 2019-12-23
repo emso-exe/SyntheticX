@@ -57,4 +57,30 @@
 		</form>
 	</div>
 
+<?php
+if ($_GET) {
+    $user = json_decode(base64_decode($_GET['u']), true);
+    echo '<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-primary">
+					<h5 class="modal-title text-white" id="exampleModalLabel">Usuário cadastrado</h5>
+				</div>
+				<div class="modal-body">
+					<label>Mátricula:</label><span class="text-primary"> ' . $user[0]["id_matricula"] . '</span><br>
+					<label>Nome:</label><span class="text-primary"> ' . $user[0]["nm_usuario"] . '</span><br>
+					<label>Login:</label><span class="text-primary"> ' . $user[0]["ds_login"] . '</span><br>
+					<label>Setor:</label><span class="text-primary"> ' . $user[0]["nm_setor"] . '</span><br>
+					<label>Cargo:</label><span class="text-primary"> ' . $user[0]["nm_cargo"] . '</span><br>
+					<label>Data de criação:</label><span class="text-primary"> ' . $user[0]["dt_create"] . '</span>
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-primary px-5" href="user_create">OK</a>
+				</div>
+			</div>
+		</div>
+	</div>';
+}
+?>
+
 </div>
