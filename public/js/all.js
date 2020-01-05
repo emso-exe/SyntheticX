@@ -33,6 +33,25 @@ $(document).ready(function() {
   $('#myModal').modal('show');
 });
 
+$("#form-user-create").submit(function() {
+
+  if($("#id_setor").val()== null || $("#id_setor").val() =="" || $("#id_setor").val() ==0 || $("#id_cargo").val()== null || $("#id_cargo").val() =="" || $("#id_cargo").val() ==0){
+
+    var mensagem =  '<span>Preencha todos os campos!</span>';
+    var janela = '<div class="modal fade" id="modalWarning" role="dialog"><div class="modal-dialog modal-dialog-centered" role="document">';
+    janela += '<div class="modal-content"><div class="modal-header bg-warning"><h5 class="modal-title" id="modalLabel">Atenção</h5>';
+    janela += '</div><div class="modal-body"><pre>';
+    janela += mensagem;
+    janela += '</pre></div><div class="modal-footer"><a class="btn btn-warning px-5" href="user_create">OK</a></div></div></div></div>';
+
+    $("#modalMessage").html(janela);
+
+    $("#modalWarning").modal("show");
+
+  return false;
+  }
+});
+
 
 $("#btn-print").click(function(){
   window.print();
