@@ -57,6 +57,8 @@
 		</form>
 	</div>
 
+	<div id="modalMessage"></div>
+
 <?php
 if ($_GET) {
     $user = json_decode(base64_decode($_GET['u']), true);
@@ -64,7 +66,7 @@ if ($_GET) {
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header bg-primary">
-					<h5 class="modal-title text-white" id="exampleModalLabel">Usuário cadastrado</h5>
+					<h5 class="modal-title text-white" id=" modalLabel">Usuário cadastrado</h5>
 				</div>
 				<div class="modal-body">
 					<label>Mátricula:</label><span class="text-primary"> ' . $user[0]["id_matricula"] . '</span><br>
