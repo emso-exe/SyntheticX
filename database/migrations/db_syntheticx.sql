@@ -78,7 +78,7 @@ ENGINE = InnoDB;
 -- Table `db_syntheticx`.`usuario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_syntheticx`.`usuario` (
-  `id_matricula` INT NOT NULL,
+  `id_matricula` INT NOT NULL AUTO_INCREMENT,
   `nm_usuario` VARCHAR(50) NOT NULL,
   `id_status` INT NOT NULL,
   `id_cargo` INT NOT NULL,
