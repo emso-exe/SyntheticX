@@ -4,14 +4,14 @@ $(function () {
     var $el = $(this);
     var op = $el.text();
     switch (op) {
-      case 'Ativo':
-        $el.html('<i class="fas fa-circle fa-small-size text-success" data-toggle="tooltip" data-placement="right" title="Ativo"></i> <span class="display">Ativo</span>');
+      case 'ativo':
+        $el.html('<i class="fas fa-circle fa-small-size text-success" data-toggle="tooltip" data-placement="right" title="Ativo"></i> <span class="display">ativo</span>');
         break;
-      case 'Inativo':
-        $el.html('<i class="fas fa-circle fa-small-size text-warning" data-toggle="tooltip" data-placement="right" title="Inativo"></i> <span class="display">Inativo</span>');
+      case 'inativo':
+        $el.html('<i class="fas fa-circle fa-small-size text-warning" data-toggle="tooltip" data-placement="right" title="Inativo"></i> <span class="display">inativo</span>');
         break;
-      case 'Bloqueado':
-        $el.html('<i class="fas fa-circle fa-small-size text-danger" data-toggle="tooltip" data-placement="right" title="Bloqueado"></i> <span class="display">Bloqueado</span>');
+      case 'bloqueado':
+        $el.html('<i class="fas fa-circle fa-small-size text-danger" data-toggle="tooltip" data-placement="right" title="Bloqueado"></i> <span class="display">bloqueado</span>');
         break;
       default:
         break;
@@ -30,7 +30,7 @@ $('select[name="id_setor"]').on('change', function () {
 });
 
 $(document).ready(function() {
-  $('#myModal').modal('show');
+  $('#my-modal').modal('show');
 });
 
 $("#form-user-create").submit(function() {
@@ -38,15 +38,15 @@ $("#form-user-create").submit(function() {
   if($("#id_setor").val()== null || $("#id_setor").val() =="" || $("#id_setor").val() ==0 || $("#id_cargo").val()== null || $("#id_cargo").val() =="" || $("#id_cargo").val() ==0){
 
     var mensagem =  '<span>Preencha todos os campos!</span>';
-    var janela = '<div class="modal fade" id="modalWarning" role="dialog"><div class="modal-dialog modal-dialog-centered" role="document">';
+    var janela = '<div class="modal fade" id="modal-warning" role="dialog"><div class="modal-dialog modal-dialog-centered" role="document">';
     janela += '<div class="modal-content"><div class="modal-header bg-warning"><h5 class="modal-title" id="modalLabel">Atenção</h5>';
     janela += '</div><div class="modal-body"><pre>';
     janela += mensagem;
     janela += '</pre></div><div class="modal-footer"><a class="btn btn-warning px-5" href="user_create">OK</a></div></div></div></div>';
 
-    $("#modalMessage").html(janela);
+    $("#modal-message").html(janela);
 
-    $("#modalWarning").modal("show");
+    $("#modal-warning").modal("show");
 
   return false;
   }
