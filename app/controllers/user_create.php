@@ -18,6 +18,8 @@ if (!empty($_POST)) {
         $newmatricula = $value->newid;
     }
 
+    if (empty($newmatricula)) {$newmatricula = 100;}
+
     $login    = new Login;
     $newlogin = $login->createLogin($newmatricula, $validate->{'nm_usuario'});
 
