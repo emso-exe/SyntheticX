@@ -14,7 +14,7 @@
 
         	<div class="form-group">
 				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
-				<input class="col-md-11 ml-3 form-control form-control-lg" id="nm_usuario" type="text" name="nm_usuario" placeholder="nm_usuario" onkeypress="" required>
+				<input class="col-md-11 ml-3 form-control form-control-lg validation" id="nm_usuario" type="text" name="nm_usuario" placeholder="nm_usuario" onkeypress="" required>
 			</div>
 
         	<!--<div class="form-group">
@@ -30,7 +30,7 @@
 			<div class="form-row mt-5">
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
-      				<select class="col-md-10 ml-3 form-control form-control-lg" id="id_setor" type="text" name="id_setor" placeholder="id_setor" onchange="" required>
+      				<select class="col-md-10 ml-3 form-control form-control-lg validation" id="id_setor" type="text" name="id_setor" placeholder="id_setor" onchange="" required>
 						<option value="0">Selecione um setor</option>
 						<?php foreach ($sector as $option): ?>
 							<option value="<?=$option->id_setor?>"><?=$option->nm_setor?></option>
@@ -40,7 +40,7 @@
 
     			<div class="form-group col-md-6" >
 					<label for="cd_cargo" class="col-md-2 col-form-label col-form-label-lg">Cargo</label>
-      				<select class="col-md-10 ml-3 form-control form-control-lg" id="id_cargo" type="text" name="id_cargo" placeholder="id_cargo" onchange="" required>
+      				<select class="col-md-10 ml-3 form-control form-control-lg validation" id="id_cargo" type="text" name="id_cargo" placeholder="id_cargo" onchange="" required>
 						<option data-position="0" value="0">Selecione um cargo</option>
 						<?php foreach ($position as $option): ?>
 							<option data-position="<?=$option->id_setor?>" value="<?=$option->id_cargo?>"><?=$option->nm_cargo?></option>
@@ -57,12 +57,12 @@
 		</form>
 	</div>
 
-	<div id="modalMessage"></div>
+	<div id="modal-message"></div>
 
 <?php
 if ($_GET) {
     $user = json_decode(base64_decode($_GET['u']), true);
-    echo '<div class="modal fade" id="myModal" role="dialog">
+    echo '<div class="modal fade" id="my-modal" role="dialog">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header bg-primary">
