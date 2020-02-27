@@ -7,7 +7,7 @@ use app\models\Query;
 $validation = new Validation;
 $validate = $validation->validate($_GET);
 
-$query_user="SELECT u.id_matricula, nm_usuario, nm_setor, nm_cargo, ds_login, ds_perfil, u.dt_create, u.dt_update, ds_status
+$query_user="SELECT u.id_matricula, nm_usuario, nm_setor, nm_cargo, ds_login, ds_perfil, u.dt_create, u.dt_update, ds_status, s.id_setor, c.id_cargo, st.id_status
 FROM usuario AS u
 INNER JOIN login AS l ON u.id_matricula = l.id_matricula
 INNER JOIN cargo AS c ON u.id_cargo = c.id_cargo
@@ -20,10 +20,21 @@ $user = new Query;
 $user->createSelect($query_user);
 $found = $user->all();
 
-
-echo "<pre>";
+/*echo "<pre>";
 print_r($found);
-echo "</pre>";
+echo "</pre>";*/
+
+$select1 = new Query;
+$select1->createSelect("SELECT id_setor, nm_setor FROM setor ORDER BY nm_setor;");
+$sector = $select1->all();
+
+$select2 = new Query;
+$select2->createSelect("SELECT id_cargo, id_setor, nm_cargo FROM cargo ORDER BY nm_cargo;");
+$position = $select2->all();
+
+$select3 = new Query;
+$select3->createSelect("SELECT id_status, ds_status FROM status ORDER BY ds_status;");
+$status = $select3->all();
 
 $layout->add('layout_content');
 
