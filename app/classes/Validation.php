@@ -6,9 +6,9 @@ final class Validation
 {
     private $validate = [];
 
-    public function validate($post)
+    public function validate($sent)
     {
-        foreach ($post as $key => $value) {
+        foreach ($sent as $key => $value) {
 
             $this->validate[$key] = filter_var($value, FILTER_SANITIZE_STRING);
         }
