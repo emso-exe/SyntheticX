@@ -54,6 +54,14 @@ switch (true) {
         $user->createSelect($query_user . " WHERE ds_perfil LIKE '%{$validate->{'ds_search_perfil'}}%';");
         $users = $user->all();
         break;
+    case (!empty($validate->{'ds_search_criacao'})):
+        $user->createSelect($query_user . " WHERE u.dt_create LIKE '%{$validate->{'ds_search_criacao'}}%';");
+        $users = $user->all();
+        break;  
+    case (!empty($validate->{'ds_search_atualizacao'})):
+        $user->createSelect($query_user . " WHERE u.dt_update LIKE '%{$validate->{'ds_search_atualizacao'}}%';");
+        $users = $user->all();
+        break;               
     case (!empty($validate->{'ds_search_status'})):
         $user->createSelect($query_user . " WHERE ds_status LIKE '{$validate->{'ds_search_status'}}';");
         $users = $user->all();
