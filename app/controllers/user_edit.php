@@ -4,25 +4,47 @@ use app\classes\Layout;
 use app\classes\Validation;
 use app\models\Query;
 
-$validation = new Validation;
-$validate = $validation->validate($_GET);
+if ($_POST) {
 
-$query_user="SELECT u.id_matricula, nm_usuario, nm_setor, nm_cargo, ds_login, ds_perfil, u.dt_create, u.dt_update, ds_status, s.id_setor, c.id_cargo, st.id_status
+    $validation = new Validation;
+    $validate   = $validation->validate($_POST);
+
+    $attributes = [
+        'id_matricula' => $validate->{'id_matricula'},
+        'id_status'    => $validate->{'id_status'},
+        'nm_usuario'   => $validate->{'nm_usuario'},
+        'ds_login'     => $validate->{'ds_login'},
+        'id_cargo'     => $validate->{'id_cargo'},
+        'dt_update'    => date_format(date_create(), 'Y-m-d H:i:s'),
+    ];
+
+    $user = new Query;
+    $user->createUpdate('usuario', $attributes, $validate->{'id_matricula'});
+    $user->update();
+
+    $id = $validate->{'id_matricula'};
+}
+
+if ($_GET) {
+
+    $validation = new Validation;
+    $validate   = $validation->validate($_GET);
+
+    $id = $validate->{'id'};
+}
+
+$query_user = "SELECT u.id_matricula, nm_usuario, nm_setor, nm_cargo, ds_login, ds_perfil, u.dt_create, u.dt_update, ds_status, s.id_setor, c.id_cargo, st.id_status
 FROM usuario AS u
 INNER JOIN login AS l ON u.id_matricula = l.id_matricula
 INNER JOIN cargo AS c ON u.id_cargo = c.id_cargo
 INNER JOIN setor AS s ON c.id_setor = s.id_setor
 INNER JOIN perfil AS p ON c.id_perfil = p.id_perfil
 INNER JOIN status AS st ON u.id_status = st.id_status
-WHERE u.id_matricula = {$validate->{'id'}};";
+WHERE u.id_matricula = {$id};";
 
 $user = new Query;
 $user->createSelect($query_user);
 $found = $user->all();
-
-/*echo "<pre>";
-print_r($found);
-echo "</pre>";*/
 
 $select1 = new Query;
 $select1->createSelect("SELECT id_setor, nm_setor FROM setor ORDER BY nm_setor;");
