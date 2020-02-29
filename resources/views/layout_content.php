@@ -1,7 +1,7 @@
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right w-25 " id="sidebar-wrapper">
+    <div class="bg-light border-right w-25 mt-1" id="sidebar-wrapper">
       <div class="list-group list-group-flush">
         <a href="dashboard" class="list-group-item list-group-item-action bg-light" data-parent="#sidebar-wrapper"><i class="fas fa-chalkboard-teacher"></i><span class="ml-2">Dashboard</a>
         <a href="#collapse-funcionarios" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-funcionarios" class="list-group-item list-group-item-action bg-light">
