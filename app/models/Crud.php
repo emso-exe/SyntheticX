@@ -34,4 +34,20 @@ abstract class Crud
         return $insert->execute($this->attributes);
     }
 
+    public function update()
+    {
+        /*
+        UPDATE usuario SET 
+        id_matricula = 999, 
+        id_status = 1,
+        nm_usuario = 'Zé Teste',
+        ds_login = '999ze',
+        id_cargo = 1,
+        dt_update = '2020-02-29 15:25:15'
+        WHERE id_matricula = 990;
+        */
+
+
+    }
+
 }
