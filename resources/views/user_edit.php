@@ -5,15 +5,15 @@
 	</div>
 	<div class="d-block">
 
-		<form class="m-4" id="form-user-edit" name="form-user-edit" action="" method="POST" onSubmit="">
+		<form class="m-4" id="form-user-edit" name="form-user-edit" action="user_edit" method="POST" onSubmit="">
 
 			<div class="form-row">
 				<div class="form-group col-md-6">
-					<label for="cd_matricula" class="col-md-2 col-form-label col-form-label-lg">Matrícula</label>
-					<input value="<?=$found[0]->id_matricula?>" class="col-md-10 ml-3 form-control form-control-lg" id="id_matricula" type="text" name="cd_matricula" placeholder="cd_matricula" onkeypress="" required>
+					<label for="id_matricula" class="col-md-2 col-form-label col-form-label-lg">Matrícula</label>
+					<input value="<?=$found[0]->id_matricula?>" class="col-md-10 ml-3 form-control form-control-lg" id="id_matricula" type="text" name="id_matricula" placeholder="cd_matricula" onkeypress="" required>
 				</div>
 				<div class="form-group col-md-6">
-						<label for="cd_status" class="col-md-2 col-form-label col-form-label-lg">Status</label>
+						<label for="id_status" class="col-md-2 col-form-label col-form-label-lg">Status</label>
 						<select class="col-md-10 ml-3 form-control form-control-lg" id="id_status" type="text" name="id_status" placeholder="id_status" onchange="" required>
 						<option value="0">Selecione um status</option>
 						<?php foreach ($status as $option): 
@@ -26,20 +26,20 @@
 			</div>
 
         	<div class="form-group">
-				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
-				<input value="<?=$found[0]->nm_usuario?>" class="col-md-11 ml-3 form-control form-control-lg" id="nm_nome" type="text" name="nm_nome" placeholder="nm_nome" onkeypress="" required>
+				<label for="nm_usuario" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
+				<input value="<?=$found[0]->nm_usuario?>" class="col-md-11 ml-3 form-control form-control-lg" id="nm_usuario" type="text" name="nm_usuario" placeholder="nm_nome" onkeypress="" required>
 			</div>
 
         	<div class="form-group">
         		<div class="form-row justify-content-between mr-5">
-					<label for="nm_login" class="col-md-2 col-form-label col-form-label-lg ml-3">Login</label>
+					<label for="ds_login" class="col-md-2 col-form-label col-form-label-lg ml-3">Login</label>
 				</div>
-				<input value="<?=$found[0]->ds_login?>" class="col-md-11 ml-3 form-control form-control-lg" id="nm_login" type="text" name="nm_login" placeholder="nm_login" onkeypress="" required>
+				<input value="<?=$found[0]->ds_login?>" class="col-md-11 ml-3 form-control form-control-lg" id="ds_login" type="text" name="ds_login" placeholder="nm_login" onkeypress="" required>
 			</div>
 
 			<div class="form-row mt-4">
     			<div class="form-group col-md-6">
-					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
+					<label for="id_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
       				<select class="col-md-10 ml-3 form-control form-control-lg validation" id="id_setor" type="text" name="id_setor" placeholder="id_setor" onchange="" required>
 						<option value="0">Selecione um setor</option>
 						<?php foreach ($sector as $option): 
@@ -51,7 +51,7 @@
 				</div>
 
     			<div class="form-group col-md-6" >
-					<label for="cd_cargo" class="col-md-2 col-form-label col-form-label-lg">Cargo</label>
+					<label for="id_cargo" class="col-md-2 col-form-label col-form-label-lg">Cargo</label>
       				<select class="col-md-10 ml-3 form-control form-control-lg validation" id="id_cargo" type="text" name="id_cargo" placeholder="id_cargo" onchange="" required>
 						<option data-position="0" value="0">Selecione um cargo</option>
 						<?php foreach ($position as $option):
