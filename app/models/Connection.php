@@ -76,7 +76,7 @@ final class Connection
                 self::$connection = self::make(self::load($arquivo));
                 self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 self::$connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-                self::$connection->exec("set names utf8");
+                self::$connection->exec("SET NAMES UTF8");
 
             } catch (PDOException $e) {
 
