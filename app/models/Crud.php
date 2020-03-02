@@ -36,18 +36,21 @@ abstract class Crud
 
     public function update()
     {
-        /*
-        UPDATE usuario SET 
-        id_matricula = 999, 
-        id_status = 1,
-        nm_usuario = 'Zé Teste',
-        ds_login = '999ze',
-        id_cargo = 1,
-        dt_update = '2020-02-29 15:25:15'
-        WHERE id_matricula = 990;
-        */
+        $sql = "UPDATE {$this->table} SET ";
 
+        $k = $this->attributes;
+        unset($k[array_keys($this->where)[0]]);
 
+        foreach ($k as $key => $value) {
+            $sql .= "{$key} = :{$key}, ";
+        }
+
+        $sql = rtrim($sql, ', ');
+
+        $sql .= " WHERE " . array_keys($this->where)[0] . "= :" . array_keys($this->where)[0] . ";";
+
+        $update = $this->connection->prepare($sql);
+        return $update->execute($this->attributes);
     }
 
 }
