@@ -10,7 +10,7 @@
 			<div class="form-row">
 				<div class="form-group col-md-6">
 					<label for="id_matricula" class="col-md-2 col-form-label col-form-label-lg">Matrícula</label>
-					<input value="<?=$found[0]->id_matricula?>" class="col-md-10 ml-3 form-control form-control-lg" id="id_matricula" type="text" name="id_matricula" placeholder="cd_matricula" onkeypress="" required>
+					<input value="<?=$found[0]->id_matricula?>" class="col-md-10 ml-3 form-control form-control-lg" id="id_matricula" type="text" name="id_matricula" placeholder="cd_matricula" onkeypress="" readonly>
 				</div>
 				<div class="form-group col-md-6">
 						<label for="id_status" class="col-md-2 col-form-label col-form-label-lg">Status</label>
@@ -34,7 +34,7 @@
         		<div class="form-row justify-content-between mr-5">
 					<label for="ds_login" class="col-md-2 col-form-label col-form-label-lg ml-3">Login</label>
 				</div>
-				<input value="<?=$found[0]->ds_login?>" class="col-md-11 ml-3 form-control form-control-lg" id="ds_login" type="text" name="ds_login" placeholder="nm_login" onkeypress="" required>
+				<input value="<?=$found[0]->ds_login?>" class="col-md-11 ml-3 form-control form-control-lg" id="ds_login" type="text" name="ds_login" placeholder="nm_login" onkeypress="" readonly>
 			</div>
 
 			<div class="form-row mt-4">
