@@ -19,7 +19,7 @@ if ($_POST) {
     ];
 
     $user = new Query;
-    $user->createUpdate('usuario', $attributes, $validate->{'id_matricula'});
+    $user->createUpdate('usuario', $attributes, ['id_matricula' => $validate->{'id_matricula'}]);
     $user->update();
 
     $id = $validate->{'id_matricula'};
