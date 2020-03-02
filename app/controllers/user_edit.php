@@ -13,7 +13,6 @@ if ($_POST) {
         'id_matricula' => $validate->{'id_matricula'},
         'id_status'    => $validate->{'id_status'},
         'nm_usuario'   => $validate->{'nm_usuario'},
-        'ds_login'     => $validate->{'ds_login'},
         'id_cargo'     => $validate->{'id_cargo'},
         'dt_update'    => date_format(date_create(), 'Y-m-d H:i:s'),
     ];
