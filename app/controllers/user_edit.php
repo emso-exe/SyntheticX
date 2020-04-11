@@ -22,6 +22,7 @@ if ($_POST) {
     $user->update();
 
     $id = $validate->{'id_matricula'};
+
 }
 
 if ($_GET) {
