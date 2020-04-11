@@ -72,4 +72,34 @@
 
 	</div>
 
+	<div id="modal-message"></div>
+
+<?php
+if ($_POST) {
+	
+    echo '<div class="modal fade" id="my-modal" role="dialog">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-success">
+					<h5 class="modal-title text-white" id=" modalLabel">Usuário alterado</h5>
+				</div>
+				<div class="modal-body">
+					<label>Mátricula:</label><span class="text-success"> ' . $found[0]->id_matricula . '</span><br>
+					<label>Nome:</label><span class="text-success"> ' . $found[0]->nm_usuario . '</span><br>
+					<label>Login:</label><span class="text-success"> ' . $found[0]->ds_login . '</span><br>
+					<label>Setor:</label><span class="text-success"> ' . $found[0]->nm_setor . '</span><br>
+					<label>Cargo:</label><span class="text-success"> ' . $found[0]->nm_cargo . '</span><br>
+					<label>Status:</label><span class="text-success"> ' . $found[0]->ds_status . '</span><br>
+					<label>Data de atualização:</label><span class="text-success"> ' . $found[0]->dt_update . '</span>
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-success px-5" href="user_search_edit">OK</a>
+					<a class="btn btn-primary px-5" href="" data-dismiss="modal">Editar</a>
+				</div>
+			</div>
+		</div>
+	</div>';
+}
+?>
+
 </div>
