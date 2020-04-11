@@ -78,6 +78,7 @@ if ($_GET) {
 				</div>
 				<div class="modal-footer">
 					<a class="btn btn-primary px-5" href="user_create">OK</a>
+					<a class="btn btn-success px-5" href="" data-dismiss="modal">Novo</a>
 				</div>
 			</div>
 		</div>
