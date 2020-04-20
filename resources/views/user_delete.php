@@ -9,38 +9,39 @@
 
 		<div class="form-row">
 				<div class="form-group col-md-4">
-					<label for="cd_matricula" class="col-md-2 col-form-label col-form-label-lg">Matrícula</label>
-					<p class="col-md-10 ml-3 text-danger" id="cd_matricula" name="cd_matricula">1003003</p>
+					<label for="id_matricula" class="col-md-2 col-form-label col-form-label-lg">Matrícula</label>
+					<p class="col-md-10 ml-3 text-danger" id="id_matricula" name="id_matricula"><?=$found[0]->id_matricula?></p>
+					<input value="<?=$found[0]->id_matricula?>" id="id_matricula" type="text" name="id_matricula" placeholder="id_matricula" onkeypress="" readonly hidden>
 				</div>
 				<div class="form-group col-md-4">
-					<label for="nm_login" class="col-md-2 col-form-label col-form-label-lg">Login</label>
-					<p class="col-md-11 ml-3 text-danger" id="nm_login" name="nm_login">1003003bryan</p>
+					<label for="ds_login" class="col-md-2 col-form-label col-form-label-lg">Login</label>
+					<p class="col-md-11 ml-3 text-danger" id="ds_login" name="ds_login"><?=$found[0]->ds_login?></p>
 				</div>
 				<div class="form-group col-md-4">
 					<label for="cd_status" class="col-md-2 col-form-label col-form-label-lg">Status</label>
-					<p class="col-md-10 ml-3 text-danger" id="ds_status" name="ds_status">BLOQUEADO</p>
+					<p class="col-md-10 ml-3 text-danger" id="ds_status" name="ds_status"><?=$found[0]->ds_status?></p>
 				</div>
 			</div>
 
         	<div class="form-group">
-				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
-				<p class="col-md-11 ml-3 text-danger" id="nm_nome" name="nm_nome">BRYAN JOSEPH SILVA</p>
+				<label for="nm_usuario" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
+				<p class="col-md-11 ml-3 text-danger" id="nm_usuario" name="nm_usuario"><?=$found[0]->nm_usuario?></p>
 			</div>
 
 			<div class="form-row">
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
-      				<p class="col-md-10 ml-3 text-danger" id="nm_setor" name="nm_setor">DESENVOLVIMENTO</p>
+      				<p class="col-md-10 ml-3 text-danger" id="nm_setor" name="nm_setor"><?=$found[0]->nm_setor?></p>
 				</div>
     			<div class="form-group col-md-6" >
 					<label for="cd_cargo" class="col-md-2 col-form-label col-form-label-lg">Cargo</label>
-      				<p class="col-md-10 ml-3 text-danger" id="nm_cargo" name="nm_cargo">ANALISTA DE SISTEMAS</p>
+      				<p class="col-md-10 ml-3 text-danger" id="nm_cargo" name="nm_cargo"><?=$found[0]->nm_cargo?></p>
 				</div>
 			</div>
 
 			<div class="col-md-11 ml-3 mr-3 mt-4 alert alert-danger" role="alert">
 				<p class="mt-1 mb-1 text-center">
-					<small><strong>ATENÇÃO!</strong> Ao clicar no botão <strong>EXCLUIR</strong> não será possível restaurar o colaborador&nbsp;<strong>Bryan Joseph Silva</strong>.</small>
+					<small><strong>ATENÇÃO!</strong> Ao clicar no botão <strong>EXCLUIR</strong> não será possível restaurar o colaborador&nbsp;<strong><?=$found[0]->nm_usuario?></strong>.</small>
 				</p>
   				<hr>
   				<div class="form-row col-md-12 justify-content-center mb-3 mt-4">
