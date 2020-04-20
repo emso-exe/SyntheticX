@@ -28,4 +28,10 @@ class Query extends Crud
         $this->where      = $where;
     }
 
+    public function createDelete($table, $where)
+    {
+        $this->table = $table;
+        $this->where = (array) $where;
+    }
+
 }
