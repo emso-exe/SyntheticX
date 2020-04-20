@@ -78,7 +78,7 @@ ENGINE = InnoDB;
 -- Table `db_syntheticx`.`usuario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_syntheticx`.`usuario` (
-  `id_matricula` INT NOT NULL AUTO_INCREMENT,
+  `id_matricula` INT NOT NULL AUTO_INCREMENT UNIQUE,
   `nm_usuario` VARCHAR(50) NOT NULL,
   `id_status` INT NOT NULL,
   `id_cargo` INT NOT NULL,
@@ -112,8 +112,8 @@ CREATE TABLE IF NOT EXISTS `db_syntheticx`.`login` (
   CONSTRAINT `fk_login_usuario_id_matricula`
     FOREIGN KEY (`id_matricula`)
     REFERENCES `db_syntheticx`.`usuario` (`id_matricula`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
 
