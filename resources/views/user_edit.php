@@ -76,7 +76,6 @@
 
 <?php
 if ($_POST) {
-	
     echo '<div class="modal fade" id="my-modal" role="dialog">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
@@ -84,7 +83,7 @@ if ($_POST) {
 					<h5 class="modal-title text-white" id=" modalLabel">Usuário alterado</h5>
 				</div>
 				<div class="modal-body">
-					<label>Mátricula:</label><span class="text-success"> ' . $found[0]->id_matricula . '</span><br>
+					<label>Matrícula:</label><span class="text-success"> ' . $found[0]->id_matricula . '</span><br>
 					<label>Nome:</label><span class="text-success"> ' . $found[0]->nm_usuario . '</span><br>
 					<label>Login:</label><span class="text-success"> ' . $found[0]->ds_login . '</span><br>
 					<label>Setor:</label><span class="text-success"> ' . $found[0]->nm_setor . '</span><br>
