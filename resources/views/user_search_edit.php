@@ -194,21 +194,25 @@
 				  <tbody>
 				  <?php foreach ($users as $user): ?>
 				    <tr>
-				      <td scope="row"><?=$user->id_matricula?></td>
-				      <td><?=$user->nm_usuario?></td>
-				      <td><?=$user->nm_setor?></td>
-				      <td><?=$user->nm_cargo?></td>
-					  <td><?=$user->ds_login?></td>
-					  <td><?=$user->ds_perfil?></td>
-					  <!--<td><?=$user->dt_create?></td>
-					  <td><?=$user->dt_update?></td>-->
-					  <td class="text-center my-status"><?=$user->ds_status?></td>
-					  <td class="border-left text-center">
-						  <a class="" href="user_edit?id=<?=$user->id_matricula?>">
-							  <i class="fas fa-user-edit fa-small-size text-primary"></i>
-				  			</a>
+				      	<td scope="row"><?=$user->id_matricula?></td>
+				      	<td><?=$user->nm_usuario?></td>
+				      	<td><?=$user->nm_setor?></td>
+				      	<td><?=$user->nm_cargo?></td>
+					  	<td><?=$user->ds_login?></td>
+					  	<td><?=$user->ds_perfil?></td>
+					  	<!--<td><?=$user->dt_create?></td>
+					  	<td><?=$user->dt_update?></td>-->
+					  	<td class="text-center my-status"><?=$user->ds_status?></td>
+					  	<td class="border-left text-center">
+							<a class="" href="user_edit?id=<?=$user->id_matricula?>">
+								<i class="fas fa-user-edit fa-small-size text-primary"></i>
+							</a>
 						</td>
-				      <td class="text-center"><i class="fas fa-user-times fa-small-size text-danger"></i></td>
+				      	<td class="text-center">
+					  		<a class="" href="user_delete?id=<?=$user->id_matricula?>">
+						  		<i class="fas fa-user-times fa-small-size text-danger"></i>
+							</a>
+						</td>
 					</tr>
 				  <?php endforeach?>
 				  </tbody>
@@ -216,5 +220,28 @@
 			</div>
 		</form>
 	</div>
+
+	<div id="modal-message"></div>
+
+<?php
+if ($_GET) {
+	$user = json_decode(base64_decode($_GET['u']), true);
+    echo '<div class="modal fade" id="my-modal" role="dialog">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-danger">
+					<h5 class="modal-title text-white" id=" modalLabel">Usuário excluído</h5>
+				</div>
+				<div class="modal-body">
+					<label>Atenção:</label><span class="text-danger"> ' . $user . ' usuário foi excluído com sucesso!</span><br>
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-danger px-5" href="user_search_edit">OK</a>
+				</div>
+			</div>
+		</div>
+	</div>';
+}
+?>
 
 </div>
