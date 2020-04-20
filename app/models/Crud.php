@@ -53,4 +53,15 @@ abstract class Crud
         return $update->execute($this->attributes);
     }
 
+    public function delete()
+    {
+        $sql = "DELETE FROM {$this->table}";
+
+        $sql .= " WHERE " . array_keys($this->where)[0] . "= :" . array_keys($this->where)[0] . ";";
+
+        $delete = $this->connection->prepare($sql);
+        $delete->execute([':'.array_keys($this->where)[0] => array_values($this->where)[0]]);
+        return $delete->rowCount();
+    }
+
 }
