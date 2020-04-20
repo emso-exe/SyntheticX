@@ -14,7 +14,7 @@
 
         	<div class="form-group">
 				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
-				<input class="col-md-11 ml-3 form-control form-control-lg validation" id="nm_usuario" type="text" name="nm_usuario" placeholder="nm_usuario" onkeypress="" required>
+				<input class="col-md-11 ml-3 form-control form-control-lg validation" id="nm_usuario" type="text" name="nm_usuario" placeholder="Nome completo" onkeypress="" required>
 			</div>
 
         	<!--<div class="form-group">
@@ -69,7 +69,7 @@ if ($_GET) {
 					<h5 class="modal-title text-white" id=" modalLabel">Usuário cadastrado</h5>
 				</div>
 				<div class="modal-body">
-					<label>Mátricula:</label><span class="text-primary"> ' . $user[0]["id_matricula"] . '</span><br>
+					<label>Matrícula:</label><span class="text-primary"> ' . $user[0]["id_matricula"] . '</span><br>
 					<label>Nome:</label><span class="text-primary"> ' . $user[0]["nm_usuario"] . '</span><br>
 					<label>Login:</label><span class="text-primary"> ' . $user[0]["ds_login"] . '</span><br>
 					<label>Setor:</label><span class="text-primary"> ' . $user[0]["nm_setor"] . '</span><br>
