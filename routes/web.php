@@ -6,6 +6,10 @@ use app\classes\Layout;
 use app\classes\Routes;
 use app\classes\Uri;
 
+$uri = Uri::load();
+$code = explode('/',$uri);
+empty($code[2]) ? $code[2]='': $code[2];
+
 $routes = [
 
     '/'                            => 'app/controllers/login',
@@ -14,9 +18,8 @@ $routes = [
     '/dashboard'                   => 'app/controllers/dashboard',
     '/profile'                     => 'app/controllers/profile',
     '/user_create'                 => 'app/controllers/user_create',
-    '/user_search'                 => 'app/controllers/user_search',
-    '/user_search_edit'            => 'app/controllers/user_search_edit',
-    '/user_edit'                   => 'app/controllers/user_edit',
+    '/user_search/'.$code[2].''    => 'app/controllers/user_search',
+    '/user_edit/'.$code[2].''      => 'app/controllers/user_edit',
     '/user_delete'                 => 'app/controllers/user_delete',
     '/login_pass_search_edit'      => 'app/controllers/login_pass_search_edit',
     '/login_pass_edit'             => 'app/controllers/login_pass_edit',
