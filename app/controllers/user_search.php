@@ -3,6 +3,7 @@
 use app\classes\Layout;
 use app\classes\Validation;
 use app\models\Query;
+use app\classes\Uri;
 
 $validation = new Validation;
 $validate   = $validation->validate($_POST);
@@ -76,4 +77,7 @@ $layout->add('layout_content');
 
 $content = new Layout;
 
-$content->add('user_search');
+$uri = Uri::load();
+$code = explode('/',$uri);
+
+$code[2] == 'search' ? $content->add('user_search') : $content->add('user_search_edit');
