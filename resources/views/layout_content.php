@@ -3,29 +3,29 @@
     <!-- Sidebar -->
     <div class="bg-light border-right w-25 mt-1" id="sidebar-wrapper">
       <div class="list-group list-group-flush">
-        <a href="dashboard" class="list-group-item list-group-item-action bg-light" data-parent="#sidebar-wrapper"><i class="fas fa-chalkboard-teacher"></i><span class="ml-2">Dashboard</a>
+        <a href="/dashboard" class="list-group-item list-group-item-action bg-light" data-parent="#sidebar-wrapper"><i class="fas fa-chalkboard-teacher"></i><span class="ml-2">Dashboard</a>
         <a href="#collapse-funcionarios" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-funcionarios" class="list-group-item list-group-item-action bg-light">
           <i class="fas fa-user-tie"></i><span class="ml-2">Funcionários</span>
         </a>
           <div class="collapse" id="collapse-funcionarios" data-parent="#sidebar-wrapper">
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_create">Cadastro</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_search_edit">Edição</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="user_search">Consulta</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="/user_create">Cadastro</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="/user_search/edit">Edição</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="/user_search/search">Consulta</a>
           </div>
         <a href="#collapse-login-senha" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-login-senha" class="list-group-item list-group-item-action bg-light">
           <i class="fas fa-user-lock"></i><span class="ml-2">Login e Senha</span>
         </a>
           <div class="collapse" id="collapse-login-senha"  data-parent="#sidebar-wrapper">
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="login_pass_search_edit">Manutenção</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="login_pass_search">Consulta</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="/login_pass_search_edit">Manutenção</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="/login_pass_search">Consulta</a>
           </div>
         <a href="#collapse-setores-cargos" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-setores-cargos"  class="list-group-item list-group-item-action bg-light">
           <i class="fas fa-id-card"></i><span class="ml-2">Setores e Cargos</span>
         </a>
           <div class="collapse" id="collapse-setores-cargos" data-parent="#sidebar-wrapper">
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="sector_position_create">Cadastro</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="sector_position_search_edit">Edição</a>
-            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="sector_position_search">Consulta</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="/sector_position_create">Cadastro</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="/sector_position_search_edit">Edição</a>
+            <a class="list-group-item list-group-item-action list-group-item-light border-0" href="/sector_position_search">Consulta</a>
           </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
   <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom fixed-top">
-        <a class="navbar-brand exo2-semi-bold-italic" href="#"><img class="mr-2 ml-2" src="images/syntheticx_white.svg" alt="" width="40" height="31">SyntheticX</a>
+        <a class="navbar-brand exo2-semi-bold-italic" href="#"><img class="mr-2 ml-2" src="/images/syntheticx_white.svg" alt="" width="40" height="31">SyntheticX</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars fa-small-size"></i>
