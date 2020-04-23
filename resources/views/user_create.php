@@ -7,25 +7,10 @@
 
 		<form class="m-4" id="form-user-create" name="form-user-create" action="user_create" method="POST" onSubmit="">
 
-        	<!--<div class="form-group">
-				<label for="cd_matricula" class="col-md-2 col-form-label col-form-label-lg">Matrícula</label>
-				<input class="col-md-11 ml-3 form-control form-control-lg" id="id_matricula" type="text" name="id_matricula" placeholder="id_matricula" onkeypress="" required>
-			</div>-->
-
         	<div class="form-group">
 				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
 				<input class="col-md-11 ml-3 form-control form-control-lg validation" id="nm_usuario" type="text" name="nm_usuario" placeholder="Nome completo" onkeypress="" required>
 			</div>
-
-        	<!--<div class="form-group">
-				<label for="nm_login" class="col-md-2 col-form-label col-form-label-lg">Login</label>
-				<div class="input-group">
-					<input class="col-md-9 ml-3 form-control form-control-lg" id="nm_login" aria-describedby="nm_login" type="text" name="ds_login" placeholder="ds_login" onkeypress="" required>
-  					<div class="input-group-append">
-    					<button class="px-4 btn btn-secondary" type="button" id="nm_login">&nbsp;&nbsp;&nbsp;&nbsp;GERAR LOGIN&nbsp;&nbsp;&nbsp;&nbsp;</button>
-  					</div>
-				</div>
-			</div>-->
 
 			<div class="form-row mt-5">
     			<div class="form-group col-md-6">

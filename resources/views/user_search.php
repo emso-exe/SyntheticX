@@ -5,15 +5,15 @@
 	</div>
 
 	<div class="d-block">
-		<form class="m-4" id="form-user-search" name="form-user-search" action="user_search" method="POST" onSubmit="">
+		<form class="m-4" id="form-user-search" name="form-user-search" action="/user_search/search" method="POST" onSubmit="">
 
         	<div class="form-group">
 				<label for="ds_search" class="col-md-12 col-form-label col-form-label-lg">Matrícula, nome, login, setor, cargo, perfil ou status</label>
 				<div class="form-row col-md-12">
 					<input class="form-control form-control-lg col-md-5" id="ds_search" type="search" name="ds_search" placeholder="" onkeypress="" aria-label="ds_search">
-					<button class="btn btn-lg btn-success col-md-2 ml-5" type="submit" name="localizar" value="1"><i class="fas fa-search"></i><span class="ml-3">LOCALIZAR</span></button>
-					<button class="btn btn-lg btn-secondary col-md-2 ml-3" type="submit" name="relatorio" value="2" id="btn-report"><i class="fas fa-file-alt"></i><span class="ml-3">RELATÓRIO</span></button>
-					<button class="btn btn-lg btn-warning col-md-2 ml-3" type="reset" name="limpar" value="0"><i class="fas fa-eraser"></i><span class="ml-3">LIMPAR</span></button>
+					<button class="btn btn-lg btn-success col-md-2 ml-5" type="submit" name="search" value="search"><i class="fas fa-search"></i><span class="ml-3">LOCALIZAR</span></button>
+					<button class="btn btn-lg btn-secondary col-md-2 ml-3" type="submit" name="report" value="report" id="btn-report"><i class="fas fa-file-alt"></i><span class="ml-3">RELATÓRIO</span></button>
+					<button class="btn btn-lg btn-warning col-md-2 ml-3" type="reset" name="clean" value="clean"><i class="fas fa-eraser"></i><span class="ml-3">LIMPAR</span></button>
 				</div>
 			</div>
 

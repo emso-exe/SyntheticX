@@ -92,7 +92,7 @@ if ($_POST) {
 					<label>Data de atualização:</label><span class="text-success"> ' . $found[0]->dt_update . '</span>
 				</div>
 				<div class="modal-footer">
-					<a class="btn btn-success px-5" href="user_search_edit">OK</a>
+					<a class="btn btn-success px-5" href="/user_search/edit">OK</a>
 					<a class="btn btn-primary px-5" href="" data-dismiss="modal">Editar</a>
 				</div>
 			</div>

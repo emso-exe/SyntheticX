@@ -11,8 +11,8 @@
 				<label for="ds_search" class="col-md-12 col-form-label col-form-label-lg">Matrícula, nome, login, setor, cargo, perfil ou status</label>
 				<div class="form-row col-md-12">
 					<input class="form-control form-control-lg col-md-5" id="ds_search" type="search" name="ds_search" placeholder="" onkeypress="" aria-label="ds_search">
-					<button class="btn btn-lg btn-success col-md-3 ml-5" type="submit" name="localizar" value="1"><i class="fas fa-search"></i><span class="ml-3">LOCALIZAR</span></button>
-					<button class="btn btn-lg btn-warning col-md-3 ml-3" type="reset" name="limpar" value="0"><i class="fas fa-eraser"></i><span class="ml-3">LIMPAR</span></button>
+					<button class="btn btn-lg btn-success col-md-3 ml-5" type="submit" name="search" value="edit"><i class="fas fa-search"></i><span class="ml-3">LOCALIZAR</span></button>
+					<button class="btn btn-lg btn-warning col-md-3 ml-3" type="reset" name="clean" value="clean"><i class="fas fa-eraser"></i><span class="ml-3">LIMPAR</span></button>
 				</div>
 			</div>
 
@@ -131,32 +131,6 @@
 							<span class="btn btn-secondary border-0">Perfil</span>
 						</div>
 					  </th>
-				      <!--<th scope="col">
-						<div class="btn-group btn-group-sm" role="group">
-							<button id="btn-group-login" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fas fa-search"></i>
-							</button>
-							<div class="dropdown-menu" aria-labelledby="btn-group-perfil">
-								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_criacao" type="search" name="ds_search_criacao" placeholder="Criação" onkeypress="" aria-label="ds_search_criacao">
-								</div>
-							</div>
-							<span class="btn btn-secondary border-0">Criação</span>
-						</div>
-					  </th>
-				      <th scope="col">
-						<div class="btn-group btn-group-sm" role="group">
-							<button id="btn-group-login" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fas fa-search"></i>
-							</button>
-							<div class="dropdown-menu" aria-labelledby="btn-group-perfil">
-								<div class="form-row ml-2 mr-2">
-									<input class="form-control form-control-sm col-md-12" id="ds_search_atualizacao" type="search" name="ds_search_atualizacao" placeholder="Atualização" onkeypress="" aria-label="ds_search_atualizacao">
-								</div>
-							</div>
-							<span class="btn btn-secondary border-0">Atualização</span>
-						</div>
-					  </th>-->
 				      <th scope="col" class="text-center">
 						<div class="btn-group btn-group-sm" role="group">
 							<button id="btn-group-status" type="button" class="btn btn-secondary border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -200,11 +174,9 @@
 				      	<td><?=$user->nm_cargo?></td>
 					  	<td><?=$user->ds_login?></td>
 					  	<td><?=$user->ds_perfil?></td>
-					  	<!--<td><?=$user->dt_create?></td>
-					  	<td><?=$user->dt_update?></td>-->
 					  	<td class="text-center my-status"><?=$user->ds_status?></td>
 					  	<td class="border-left text-center">
-							<a class="" href="user_edit?id=<?=$user->id_matricula?>">
+							<a class="" href="/user_edit/<?=$user->id_matricula?>">
 								<i class="fas fa-user-edit fa-small-size text-primary"></i>
 							</a>
 						</td>
