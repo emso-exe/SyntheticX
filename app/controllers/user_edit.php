@@ -3,6 +3,7 @@
 use app\classes\Layout;
 use app\classes\Validation;
 use app\models\Query;
+use app\classes\Uri;
 
 if ($_POST) {
 
@@ -23,14 +24,11 @@ if ($_POST) {
 
     $id = $validate->{'id_matricula'};
 
-}
+} else {
 
-if ($_GET) {
-
-    $validation = new Validation;
-    $validate   = $validation->validate($_GET);
-
-    $id = $validate->{'id'};
+    $uri = Uri::load();
+    $id = explode('/',$uri);
+    $id = $id[2];
 }
 
 $query_user = "SELECT u.id_matricula, nm_usuario, nm_setor, nm_cargo, ds_login, ds_perfil, u.dt_create, u.dt_update, ds_status, s.id_setor, c.id_cargo, st.id_status
