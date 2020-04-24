@@ -33,16 +33,31 @@ $(document).ready(function() {
   $('#my-modal').modal('show');
 });
 
-$("#form-user-create").submit(function() {
+$("form").submit(function() {
 
-  if($("#id_setor").val()== null || $("#id_setor").val() =="" || $("#id_setor").val() ==0 || $("#id_cargo").val()== null || $("#id_cargo").val() =="" || $("#id_cargo").val() ==0){
+  var idForm = document.forms[0].id;
+
+  switch (idForm) {
+    case 'form-user-create':
+      var page = "/user_create";
+      break;
+    case 'form-user-edit':
+      var page = "/user_edit/"+$("#id_matricula").val();
+      break;        
+    default:
+      break;
+  }
+
+  if($("#id_setor").val()== null || $("#id_setor").val() =="" || $("#id_setor").val() ==0 ||
+   $("#id_cargo").val()== null || $("#id_cargo").val() =="" || $("#id_cargo").val() ==0 ||
+   $("#nm_usuario").val()== null || $("#nm_usuario").val() =="" || $("#nm_usuario").val() ==0 ){
 
     var mensagem =  '<span>Preencha todos os campos!</span>';
     var janela = '<div class="modal fade" id="modal-warning" role="dialog"><div class="modal-dialog modal-dialog-centered" role="document">';
     janela += '<div class="modal-content"><div class="modal-header bg-warning"><h5 class="modal-title" id="modalLabel">Atenção</h5>';
     janela += '</div><div class="modal-body"><pre>';
     janela += mensagem;
-    janela += '</pre></div><div class="modal-footer"><a class="btn btn-warning px-5" href="user_create">OK</a></div></div></div></div>';
+    janela += '</pre></div><div class="modal-footer"><a class="btn btn-warning px-5" href="'+page+'">OK</a></div></div></div></div>';
 
     $("#modal-message").html(janela);
 
