@@ -6,8 +6,7 @@ use app\classes\Layout;
 use app\classes\Routes;
 use app\classes\Uri;
 
-$uri = Uri::load();
-$code = explode('/',$uri);
+$code = Uri::make(Uri::load());
 empty($code[2]) ? $code[2]='': $code[2];
 
 $routes = [
