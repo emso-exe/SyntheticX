@@ -35,6 +35,16 @@ $(document).ready(function() {
 
 $("form").submit(function() {
 
+  var x = document.forms[0];
+  var txt = "";
+  var i;
+  for (i = 0; i < x.length; i++) {
+    if (x.elements[i].value=="" || x.elements[i].value==0) {
+      txt = txt + x.elements[i].id + "<br>";
+      var modal = true;
+    }
+  }
+
   var idForm = document.forms[0].id;
 
   switch (idForm) {
@@ -42,17 +52,15 @@ $("form").submit(function() {
       var page = "/user_create";
       break;
     case 'form-user-edit':
-      var page = "/user_edit/"+$("#id_matricula").val();
+      var page = "/user_edit/"+$("#Matrícula").val();
       break;        
     default:
       break;
   }
 
-  if($("#id_setor").val()== null || $("#id_setor").val() =="" || $("#id_setor").val() ==0 ||
-   $("#id_cargo").val()== null || $("#id_cargo").val() =="" || $("#id_cargo").val() ==0 ||
-   $("#nm_usuario").val()== null || $("#nm_usuario").val() =="" || $("#nm_usuario").val() ==0 ){
+  if(modal == true){
 
-    var mensagem =  '<span>Preencha todos os campos!</span>';
+    var mensagem =  '<span>Preencha todos os campos!<br><br>'+txt+'</span><br>';
     var janela = '<div class="modal fade" id="modal-warning" role="dialog"><div class="modal-dialog modal-dialog-centered" role="document">';
     janela += '<div class="modal-content"><div class="modal-header bg-warning"><h5 class="modal-title" id="modalLabel">Atenção</h5>';
     janela += '</div><div class="modal-body"><pre>';
