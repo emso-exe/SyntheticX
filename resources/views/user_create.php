@@ -9,13 +9,13 @@
 
         	<div class="form-group">
 				<label for="nm_nome" class="col-md-2 col-form-label col-form-label-lg">Nome</label>
-				<input class="col-md-11 ml-3 form-control form-control-lg validation" id="nm_usuario" type="text" name="nm_usuario" placeholder="Nome completo" onkeypress="" required>
+				<input class="col-md-11 ml-3 form-control form-control-lg validation" id="Nome" type="text" name="nm_usuario" placeholder="Nome completo" onkeypress="" required>
 			</div>
 
 			<div class="form-row mt-5">
     			<div class="form-group col-md-6">
 					<label for="cd_setor" class="col-md-2 col-form-label col-form-label-lg">Setor</label>
-      				<select class="col-md-10 ml-3 form-control form-control-lg validation" id="id_setor" type="text" name="id_setor" placeholder="id_setor" onchange="" required>
+      				<select class="col-md-10 ml-3 form-control form-control-lg validation" id="Setor" type="text" name="id_setor" placeholder="Setor" onchange="" required>
 						<option value="0">Selecione um setor</option>
 						<?php foreach ($sector as $option): ?>
 							<option value="<?=$option->id_setor?>"><?=$option->nm_setor?></option>
@@ -25,7 +25,7 @@
 
     			<div class="form-group col-md-6" >
 					<label for="cd_cargo" class="col-md-2 col-form-label col-form-label-lg">Cargo</label>
-      				<select class="col-md-10 ml-3 form-control form-control-lg validation" id="id_cargo" type="text" name="id_cargo" placeholder="id_cargo" onchange="" required>
+      				<select class="col-md-10 ml-3 form-control form-control-lg validation" id="Cargo" type="text" name="id_cargo" placeholder="Cargo" onchange="" required>
 						<option data-position="0" value="0">Selecione um cargo</option>
 						<?php foreach ($position as $option): ?>
 							<option data-position="<?=$option->id_setor?>" value="<?=$option->id_cargo?>"><?=$option->nm_cargo?></option>
@@ -35,8 +35,8 @@
 			</div>
 
 			<div class="form-row col-md-12 justify-content-center mt-5">
-				<button class="btn btn-lg btn-success m-4 col-md-4" type="submit" name="gravar" value="1"><i class="fas fa-save"></i><span class="ml-4">CADASTRAR</span></button>
-				<button class="btn btn-lg btn-warning m-4 col-md-4" type="reset" name="limpar" value="0"><i class="fas fa-eraser"></i><span class="ml-4">LIMPAR</span></button>
+				<button class="btn btn-lg btn-success m-4 col-md-4" type="submit" name="cadastrar" value="cadastrar"><i class="fas fa-save"></i><span class="ml-4">CADASTRAR</span></button>
+				<button class="btn btn-lg btn-warning m-4 col-md-4" type="reset" name="limpar" value="limpar"><i class="fas fa-eraser"></i><span class="ml-4">LIMPAR</span></button>
 			</div>
 
 		</form>
