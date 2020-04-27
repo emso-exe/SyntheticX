@@ -50,10 +50,6 @@ if (!empty($_POST)) {
     INNER JOIN setor AS s ON s.id_setor = c.id_setor
     WHERE u.id_matricula={$newmatricula};");
     $newuser = $selectuser->all();
-
-    $jsonuser = base64_encode(json_encode($newuser));
-
-    header('Location: user_create?u=' . $jsonuser . '');
 }
 
 $select1 = new Query;
