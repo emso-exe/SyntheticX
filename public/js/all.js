@@ -49,10 +49,10 @@ $("form").submit(function() {
 
   switch (idForm) {
     case 'form-user-create':
-      var page = "/user_create";
+      var page = "href=\"\" data-dismiss=\"modal\"";
       break;
     case 'form-user-edit':
-      var page = "/user_edit/"+$("#Matrícula").val();
+      var page = "href=/user_edit/"+$("#Matrícula").val();
       break;        
     default:
       break;
@@ -65,7 +65,7 @@ $("form").submit(function() {
     janela += '<div class="modal-content"><div class="modal-header bg-warning"><h5 class="modal-title" id="modalLabel">Atenção</h5>';
     janela += '</div><div class="modal-body"><pre>';
     janela += mensagem;
-    janela += '</pre></div><div class="modal-footer"><a class="btn btn-warning px-5" href="'+page+'">OK</a></div></div></div></div>';
+    janela += '</pre></div><div class="modal-footer"><a class="btn btn-warning px-5" '+page+'>OK</a></div></div></div></div>';
 
     $("#modal-message").html(janela);
 
