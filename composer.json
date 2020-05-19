@@ -1,0 +1,27 @@
+{
+
+	"name": "emso-exe/syntheticx",
+	
+	"description": "Projeto de aprendizado, sistema gerenciador de usuários (funcionários) com permissão de acesso de acordo com perfil, manutenção de registros via administrador e emissão de relatórios (lista).",
+	
+    "type": "project",
+	
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Estênio Mariano",
+            "email": "dev.emso.exe@gmail.com"
+        }
+    ],
+	
+	"autoload": {
+		
+		"psr-4":{
+
+			"app\\":"app"
+			
+		}
+	}
+
+}
