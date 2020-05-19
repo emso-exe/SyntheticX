@@ -1,4 +1,5 @@
 _temp*
+vendor
 O*-B*.ttf
 O*-E*.ttf
 O*-I*.ttf
@@ -7,4 +8,5 @@ O*-S*.ttf
 fontawesome
 *.mwb
 *.bak
+*.code-workspace
 jquery.tablesorter.js
