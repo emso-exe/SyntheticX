@@ -10,3 +10,4 @@ fontawesome
 *.bak
 *.code-workspace
 jquery.tablesorter.js
+config_db.ini
