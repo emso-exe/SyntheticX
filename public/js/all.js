@@ -35,30 +35,36 @@ $(document).ready(function() {
 
 $("form").submit(function() {
 
-  var x = document.forms[0];
-  var txt = "";
-  var i;
-  for (i = 0; i < x.length; i++) {
-    if (x.elements[i].value=="" || x.elements[i].value==0) {
-      txt = txt + x.elements[i].id + "<br>";
-      var modal = true;
+  function fieldCollection() {
+    var x = document.forms[0];
+    var txt = "";
+    var i;
+    for (i = 0; i < x.length; i++) {
+      if (x.elements[i].value=="" || x.elements[i].value==0) {
+        txt = txt + x.elements[i].id + "<br>";
+      }
     }
+    return txt;
   }
 
   var idForm = document.forms[0].id;
 
   switch (idForm) {
     case 'form-user-create':
+      var txt = fieldCollection();
+      var modal = true
       var page = "href=\"\" data-dismiss=\"modal\"";
       break;
     case 'form-user-edit':
+      var txt = fieldCollection();
+      var modal = true
       var page = "href=/user_edit/"+$("#Matrícula").val();
       break;        
     default:
       break;
   }
 
-  if(modal == true){
+  if (modal == true) {
 
     var mensagem =  '<span>Preencha todos os campos!<br><br>'+txt+'</span><br>';
     var janela = '<div class="modal fade" id="modal-warning" role="dialog"><div class="modal-dialog modal-dialog-centered" role="document">';
