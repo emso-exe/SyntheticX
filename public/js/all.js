@@ -52,12 +52,12 @@ $("form").submit(function() {
   switch (idForm) {
     case 'form-user-create':
       var txt = fieldCollection();
-      var modal = txt > 0 ? true : false;
+      var modal = txt > 0 || txt != "" ? true : false;
       var page = "href=\"\" data-dismiss=\"modal\"";
       break;
     case 'form-user-edit':
       var txt = fieldCollection();
-      var modal = txt > 0 ? true : false;
+      var modal = txt > 0 || txt != "" ? true : false;
       var page = "href=/user_edit/"+$("#Matrícula").val();
       break;        
     default:
