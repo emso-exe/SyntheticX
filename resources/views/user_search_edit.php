@@ -181,7 +181,7 @@
 							</a>
 						</td>
 				      	<td class="text-center">
-					  		<a class="" href="user_delete?id=<?=$user->id_matricula?>">
+					  		<a class="" href="/user_delete/<?=$user->id_matricula?>">
 						  		<i class="fas fa-user-times fa-small-size text-danger"></i>
 							</a>
 						</td>
