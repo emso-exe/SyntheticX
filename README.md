@@ -6,6 +6,8 @@ Projeto de sistema gerenciador de usuários (_funcionários_) com cadastro, atri
 
 ## Tecnologias
 
+- HTML
+- CSS
 - PHP
 - MySQL
 - JavaScript
