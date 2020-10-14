@@ -66,7 +66,7 @@ $("form").submit(function() {
 
   if (modal == true) {
 
-    var mensagem =  '<span>Preencha todos os campos!<br><br>'+txt+'</span><br>';
+    var mensagem = '<span>Preencha todos os campos!<br><br>'+txt+'</span><br>';
     var janela = '<div class="modal fade" id="modal-warning" role="dialog"><div class="modal-dialog modal-dialog-centered" role="document">';
     janela += '<div class="modal-content"><div class="modal-header bg-warning"><h5 class="modal-title" id="modalLabel">Atenção</h5>';
     janela += '</div><div class="modal-body"><pre>';
@@ -77,7 +77,7 @@ $("form").submit(function() {
 
     $("#modal-warning").modal("show");
 
-  return false;
+    return false;
   }
 });
 
