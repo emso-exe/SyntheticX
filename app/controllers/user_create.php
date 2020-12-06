@@ -25,7 +25,7 @@ if (!empty($_POST)) {
 
     $attributes1 = [
         'id_matricula' => $newmatricula,
-        'nm_usuario'   => $validate->{'nm_usuario'},
+        'nm_usuario'   => strtoupper($validate->{'nm_usuario'}),
         'id_cargo'     => $validate->{'id_cargo'},
         'id_status'    => 1,
     ];
