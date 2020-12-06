@@ -13,7 +13,7 @@ if ($_POST) {
     $attributes = [
         'id_matricula' => $validate->{'id_matricula'},
         'id_status'    => $validate->{'id_status'},
-        'nm_usuario'   => $validate->{'nm_usuario'},
+        'nm_usuario'   => strtoupper($validate->{'nm_usuario'}),
         'id_cargo'     => $validate->{'id_cargo'},
         'dt_update'    => date_format(date_create(), 'Y-m-d H:i:s'),
     ];
