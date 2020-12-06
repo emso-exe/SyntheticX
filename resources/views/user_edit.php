@@ -93,7 +93,7 @@ if ($_POST) {
 				</div>
 				<div class="modal-footer">
 					<a class="btn btn-success px-5" href="/user_search/edit">OK</a>
-					<a class="btn btn-primary px-5" href="" data-dismiss="modal">Editar</a>
+					<a class="btn btn-primary px-5" href="/user_edit/' . $found[0]->id_matricula . '" data-dismiss="modal">Editar</a>
 				</div>
 			</div>
 		</div>
